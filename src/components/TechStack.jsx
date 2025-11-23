@@ -68,6 +68,34 @@ const TechStack = ({ darkMode }) => {
             proficiency: 87
         },
         {
+            name: 'Angular',
+            Icon: FaAngular,
+            color: 'from-red-600 to-red-500',
+            description: 'Frontend Framework',
+            proficiency: 85
+        },
+        {
+            name: 'Vue.js',
+            Icon: FaVuejs,
+            color: 'from-green-400 to-green-600',
+            description: 'Frontend Framework',
+            proficiency: 83
+        },
+        {
+            name: 'Laravel',
+            Icon: FaLaravel,
+            color: 'from-red-500 to-red-700',
+            description: 'PHP Framework',
+            proficiency: 82
+        },
+        {
+            name: 'SQL',
+            Icon: FaDatabase,
+            color: 'from-gray-500 to-gray-700',
+            description: 'Database Language',
+            proficiency: 88
+        },
+        {
             name: 'AWS',
             Icon: FaAws,
             color: 'from-orange-500 to-yellow-500',
@@ -126,18 +154,22 @@ const TechStack = ({ darkMode }) => {
     ]
 
     return (
-        <section className={`py-24 relative overflow-hidden ${darkMode ? 'bg-gray-950' : 'bg-gray-50'
-            }`}>
-            {/* Animated Grid Background */}
+        <section className={`py-24 relative overflow-hidden ${darkMode ? 'bg-gray-950' : 'bg-gray-50'}`}>
+
+            {/* BACKGROUND GRID */}
             <div className="absolute inset-0 opacity-5">
-                <div className="absolute inset-0" style={{
-                    backgroundImage: `linear-gradient(${darkMode ? '#fff' : '#000'} 1px, transparent 1px), linear-gradient(90deg, ${darkMode ? '#fff' : '#000'} 1px, transparent 1px)`,
-                    backgroundSize: '50px 50px'
-                }} />
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        backgroundImage: `linear-gradient(${darkMode ? '#fff' : '#000'} 1px, transparent 1px), linear-gradient(90deg, ${darkMode ? '#fff' : '#000'} 1px, transparent 1px)`,
+                        backgroundSize: '50px 50px'
+                    }}
+                />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Header */}
+
+                {/* HEADER */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -157,18 +189,22 @@ const TechStack = ({ darkMode }) => {
                         💻 Technologies
                     </motion.span>
 
-                    <h2 className={`text-4xl md:text-6xl font-black mb-6 font-display ${darkMode ? 'text-white' : 'text-gray-900'
-                        }`}>
+                    <h2
+                        className={`text-4xl md:text-6xl font-black mb-6 font-display ${darkMode ? 'text-white' : 'text-gray-900'
+                            }`}
+                    >
                         Our <span className="gradient-text">Tech Stack</span>
                     </h2>
 
-                    <p className={`text-xl max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'
-                        }`}>
+                    <p
+                        className={`text-xl max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'
+                            }`}
+                    >
                         Cutting-edge technologies we master to build exceptional products
                     </p>
                 </motion.div>
 
-                {/* Tech Grid */}
+                {/* MAIN GRID */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 mb-12">
                     {technologies.slice(0, 16).map((tech, index) => {
                         const Icon = tech.Icon
@@ -192,45 +228,42 @@ const TechStack = ({ darkMode }) => {
                                 }}
                                 className="group cursor-pointer"
                             >
-                                <div className={`aspect-square rounded-2xl p-4 flex flex-col items-center justify-center relative overflow-hidden ${darkMode ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'
-                                    } shadow-lg hover:shadow-2xl transition-all duration-500`}>
-
-                                    {/* Gradient Background on Hover */}
+                                <div
+                                    className={`aspect-square rounded-2xl p-4 flex flex-col items-center justify-center relative overflow-hidden ${darkMode ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'
+                                        } shadow-lg hover:shadow-2xl transition-all duration-500`}
+                                >
+                                    {/* Hover BG */}
                                     <motion.div
                                         className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
                                     />
 
-                                    {/* Icon */}
+                                    {/* ICON */}
                                     <motion.div
-                                        className={`text-5xl mb-2 relative z-10 bg-gradient-to-br ${tech.color} bg-clip-text text-transparent`}
+                                        className={`text-5xl mb-2 relative z-10 ${darkMode ? 'text-white' : 'text-gray-900'}`}
                                         whileHover={{ scale: 1.2, rotate: 360 }}
                                         transition={{ duration: 0.5 }}
                                     >
                                         <Icon />
                                     </motion.div>
 
-                                    {/* Name */}
-                                    <p className={`text-xs font-bold text-center relative z-10 ${darkMode ? 'text-white' : 'text-gray-900'
-                                        }`}>
+                                    {/* NAME */}
+                                    <p className={`text-xs font-bold text-center relative z-10 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
                                         {tech.name}
                                     </p>
 
-                                    {/* Description on Hover */}
+                                    {/* DESC */}
                                     <motion.p
                                         initial={{ opacity: 0 }}
                                         whileHover={{ opacity: 1 }}
-                                        className={`text-xs text-center mt-1 ${darkMode ? 'text-gray-400' : 'text-gray-600'
-                                            }`}
+                                        className={`text-xs text-center mt-1 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}
                                     >
                                         {tech.description}
                                     </motion.p>
 
-                                    {/* Shine Effect */}
+                                    {/* Shine */}
                                     <motion.div
                                         className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-                                        animate={{
-                                            x: ['-100%', '100%'],
-                                        }}
+                                        animate={{ x: ['-100%', '100%'] }}
                                         transition={{
                                             duration: 2,
                                             repeat: Infinity,
@@ -244,7 +277,7 @@ const TechStack = ({ darkMode }) => {
                     })}
                 </div>
 
-                {/* Detailed Tech Cards */}
+                {/* DETAILED CARDS */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {technologies.slice(0, 4).map((tech, index) => {
                         const Icon = tech.Icon
@@ -259,7 +292,9 @@ const TechStack = ({ darkMode }) => {
                                 className={`p-6 rounded-2xl ${darkMode ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'
                                     } shadow-lg hover:shadow-2xl transition-all duration-300`}
                             >
-                                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${tech.color} flex items-center justify-center text-white text-3xl mb-4`}>
+                                <div
+                                    className={`w-16 h-16 rounded-xl bg-gradient-to-br ${tech.color} flex items-center justify-center text-white text-3xl mb-4`}
+                                >
                                     <Icon />
                                 </div>
 
@@ -271,18 +306,15 @@ const TechStack = ({ darkMode }) => {
                                     {tech.description}
                                 </p>
 
-                                {/* Proficiency Bar */}
+                                {/* BAR */}
                                 <div className="space-y-2">
                                     <div className="flex justify-between text-xs">
-                                        <span className={darkMode ? 'text-gray-400' : 'text-gray-600'}>
-                                            Proficiency
-                                        </span>
+                                        <span className={darkMode ? 'text-gray-400' : 'text-gray-600'}>Proficiency</span>
                                         <span className={`font-bold bg-gradient-to-r ${tech.color} bg-clip-text text-transparent`}>
                                             {tech.proficiency}%
                                         </span>
                                     </div>
-                                    <div className={`h-2 rounded-full overflow-hidden ${darkMode ? 'bg-gray-800' : 'bg-gray-200'
-                                        }`}>
+                                    <div className={`h-2 rounded-full overflow-hidden ${darkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
                                         <motion.div
                                             initial={{ width: 0 }}
                                             whileInView={{ width: `${tech.proficiency}%` }}
@@ -298,7 +330,7 @@ const TechStack = ({ darkMode }) => {
                 </div>
             </div>
 
-            {/* Floating Tech Icons Background */}
+            {/* FLOATING ICONS */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
                 {[...Array(15)].map((_, i) => {
                     const RandomIcon = technologies[Math.floor(Math.random() * technologies.length)].Icon

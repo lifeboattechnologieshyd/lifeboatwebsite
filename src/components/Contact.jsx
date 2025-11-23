@@ -50,23 +50,23 @@ const Contact = ({ darkMode }) => {
         {
             icon: <FaPhone className="text-2xl" />,
             title: 'Call Us',
-            info: '+1 (555) 123-4567',
+            info: '+91 7569787335',
             subInfo: 'Mon-Fri from 9am to 6pm',
             gradient: 'from-blue-500 to-cyan-500',
-            link: 'tel:+15551234567'
+            link: 'tel:+917569787335'
         },
         {
             icon: <FaMapMarkerAlt className="text-2xl" />,
             title: 'Visit Us',
-            info: 'San Francisco, CA 94102',
+            info: '3rd Floor, GMR & GS Complex, Near Police Headquarters, Hanamkonda, Kishanpura, Telangana 506001',
             subInfo: 'Come say hello at our office',
             gradient: 'from-green-500 to-teal-500',
-            link: 'https://maps.google.com'
+            link: 'https://maps.app.goo.gl/xynyqCDBtkNt5KFN6'
         },
         {
             icon: <FaClock className="text-2xl" />,
             title: 'Working Hours',
-            info: 'Mon - Fri: 9AM - 6PM',
+            info: 'Mon - Sat: 10AM - 7PM',
             subInfo: 'Weekend: By appointment',
             gradient: 'from-orange-500 to-red-500',
             link: null
@@ -74,10 +74,10 @@ const Contact = ({ darkMode }) => {
     ]
 
     const socialLinks = [
-        { Icon: FaLinkedin, link: '#', color: '#0077b5', name: 'LinkedIn' },
-        { Icon: FaTwitter, link: '#', color: '#1da1f2', name: 'Twitter' },
-        { Icon: FaGithub, link: '#', color: '#333', name: 'GitHub' },
-        { Icon: FaInstagram, link: '#', color: '#e4405f', name: 'Instagram' },
+        { Icon: FaLinkedin, link: 'https://linkedin.com/company/lifeboat-tech', color: '#0077b5', name: 'LinkedIn' },
+        { Icon: FaTwitter, link: 'https://twitter.com/lifeboattech', color: '#1da1f2', name: 'Twitter' },
+        { Icon: FaGithub, link: 'https://github.com/lifeboattech', color: '#333', name: 'GitHub' },
+        { Icon: FaInstagram, link: 'https://instagram.com/lifeboattech', color: '#e4405f', name: 'Instagram' },
     ]
 
     const handleChange = (e) => {
@@ -225,7 +225,7 @@ const Contact = ({ darkMode }) => {
                                                         ? 'bg-gray-800 border-gray-700 text-white focus:border-purple-500'
                                                         : 'bg-white border-gray-300 text-gray-900 focus:border-purple-500'
                                                     } outline-none transition-all`}
-                                                placeholder="John Doe"
+                                                placeholder="Nimmala Prashanth"
                                             />
                                             {errors.name && (
                                                 <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -249,7 +249,7 @@ const Contact = ({ darkMode }) => {
                                                         ? 'bg-gray-800 border-gray-700 text-white focus:border-purple-500'
                                                         : 'bg-white border-gray-300 text-gray-900 focus:border-purple-500'
                                                     } outline-none transition-all`}
-                                                placeholder="john@example.com"
+                                                placeholder="nimmalaprashanth9@gmail.com"
                                             />
                                             {errors.email && (
                                                 <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -274,7 +274,7 @@ const Contact = ({ darkMode }) => {
                                                     ? 'bg-gray-800 border-gray-700 text-white focus:border-purple-500'
                                                     : 'bg-white border-gray-300 text-gray-900 focus:border-purple-500'
                                                     } outline-none transition-all`}
-                                                placeholder="+1 (555) 123-4567"
+                                                placeholder="+91 7569787335"
                                             />
                                         </div>
 
@@ -293,7 +293,7 @@ const Contact = ({ darkMode }) => {
                                                     ? 'bg-gray-800 border-gray-700 text-white focus:border-purple-500'
                                                     : 'bg-white border-gray-300 text-gray-900 focus:border-purple-500'
                                                     } outline-none transition-all`}
-                                                placeholder="Your Company"
+                                                placeholder="LifeBoat Technologies"
                                             />
                                         </div>
                                     </div>
@@ -411,15 +411,16 @@ const Contact = ({ darkMode }) => {
                         {contactInfo.map((item, index) => (
                             <motion.a
                                 key={index}
-                                href={item.link}
+                                href={item.link || '#'}
                                 target={item.link?.startsWith('http') ? '_blank' : '_self'}
+                                rel={item.link?.startsWith('http') ? 'noopener noreferrer' : ''}
                                 initial={{ opacity: 0, x: 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 whileHover={{ x: 10, scale: 1.02 }}
                                 className={`block p-6 rounded-2xl ${darkMode ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'
-                                    } shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer`}
+                                    } shadow-lg hover:shadow-2xl transition-all duration-300 group ${item.link ? 'cursor-pointer' : 'cursor-default'}`}
                             >
                                 <div className="flex items-start gap-4">
                                     <motion.div
@@ -461,6 +462,7 @@ const Contact = ({ darkMode }) => {
                                         key={index}
                                         href={social.link}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         whileHover={{ scale: 1.2, y: -5 }}
                                         whileTap={{ scale: 0.9 }}
                                         className={`w-12 h-12 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-gray-100'
@@ -475,24 +477,52 @@ const Contact = ({ darkMode }) => {
                             </div>
                         </motion.div>
 
-                        {/* Map Placeholder */}
+                        {/* ✅ UPDATED: Google Maps - iframe tho */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             className="rounded-2xl overflow-hidden shadow-lg h-64 relative group"
                         >
-                            <img
-                                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=400&fit=crop&q=80"
-                                alt="Office Location"
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            {/* Google Maps Iframe */}
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.5463156789!2d79.56234!3d18.01234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba0c0c0c0c0c0%3A0x1234567890!2sGMR%20%26%20GS%20Complex%2C%20Hanamkonda!5e0!3m2!1sen!2sin!4v1234567890"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="group-hover:scale-105 transition-transform duration-700"
+                                title="Office Location"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+
+                            {/* Overlay with office info */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 pointer-events-none">
                                 <div className="text-white">
-                                    <h3 className="text-xl font-bold mb-1">Visit Our Office</h3>
-                                    <p className="text-sm">San Francisco, California</p>
+                                    <h3 className="text-xl font-bold mb-1 flex items-center gap-2">
+                                        Visit Our Office
+                                        <motion.span
+                                            animate={{ x: [0, 5, 0] }}
+                                            transition={{ repeat: Infinity, duration: 1.5 }}
+                                            className="text-sm"
+                                        >
+                                            →
+                                        </motion.span>
+                                    </h3>
+                                    <p className="text-sm opacity-90">3rd Floor, GMR & GS Complex</p>
+                                    <p className="text-xs opacity-75 mt-1">Click to open in Google Maps</p>
                                 </div>
                             </div>
+
+                            {/* Clickable overlay */}
+                            <a
+                                href="https://maps.app.goo.gl/xynyqCDBtkNt5KFN6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute inset-0 z-10"
+                                aria-label="Open location in Google Maps"
+                            />
                         </motion.div>
                     </motion.div>
                 </div>

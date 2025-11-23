@@ -188,7 +188,7 @@ const Footer = ({ darkMode }) => {
                             >
                                 <FaHeart className="inline text-red-500" />
                             </motion.span>
-                            {' '}and ☕ in San Francisco
+                            {' '}and ☕ in Hanamkonda
                         </motion.p>
 
                         {/* Quick Links */}
