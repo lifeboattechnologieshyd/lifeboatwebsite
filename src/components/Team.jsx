@@ -9,7 +9,7 @@ const Team = ({ darkMode }) => {
         {
             name: 'Ranjith Padidala',
             role: 'CEO & Founder',
-            image: 'src\\assets\\ranjith.jpg',
+            image: '\\assets\\ranjith.jpg',
             bio: 'Visionary leader with 15+ years in tech industry, driving innovation and growth',
             expertise: ['Leadership', 'Strategy', 'Innovation'],
             gradient: 'from-purple-500 to-pink-500',

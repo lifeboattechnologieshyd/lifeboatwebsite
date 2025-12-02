@@ -51,7 +51,7 @@ const Navbar = () => {
                             >
                                 {/* Logo Image - NO BACKGROUND COLOR */}
                                 <img
-                                    src="src/assets/life logo.png"
+                                    src="/assets/life logo.png"
                                     alt="Lifeboat Technologies"
                                     className="w-14 h-14 object-contain"
                                 />
