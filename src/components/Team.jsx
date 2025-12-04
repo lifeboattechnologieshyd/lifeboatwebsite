@@ -34,7 +34,7 @@ const Team = () => {
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
-                email: 'saitej@lifeboat.co.in'
+                email: 'saitej@lifeboat.co.in '
             },
             stats: {
                 experience: '8+ Years',
