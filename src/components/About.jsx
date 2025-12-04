@@ -9,7 +9,7 @@ const About = () => {
             title: 'Our Mission',
             description: 'To deliver cutting-edge software solutions that drive business growth and digital transformation across industries.',
             color: 'from-[#3234a2] to-[#32a162]',
-            stats: '500+ Projects Delivered'
+            stats: '50+ Projects Delivered'
         },
         {
             icon: <FaEye className="text-4xl" />,
@@ -28,10 +28,10 @@ const About = () => {
     ]
 
     const achievements = [
-        { number: '10+', label: 'Years Experience', icon: '📅' },
+        { number: '6+', label: 'Years Experience', icon: '📅' },
         { number: '50+', label: 'Team Members', icon: '👥' },
-        { number: '200+', label: 'Happy Clients', icon: '😊' },
-        { number: '30+', label: 'Industry Awards', icon: '🏆' },
+        { number: '20+', label: 'Happy Clients', icon: '😊' },
+        { number: '5+', label: 'Industry Awards', icon: '🏆' },
     ]
 
     return (

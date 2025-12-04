@@ -4,14 +4,14 @@ import { FaRocket, FaUsers, FaTrophy, FaGlobe, FaHeart, FaLightbulb } from 'reac
 const OurStoryPage = () => {
     const timeline = [
         {
-            year: '2020',
+            year: '2018',
             title: 'The Beginning',
             description: 'Lifeboat Technologies was founded in Hanamkonda with a vision to provide world-class software solutions.',
             icon: <FaRocket />,
             color: '#3234a2'
         },
         {
-            year: '2021',
+            year: '2019',
             title: 'First Major Client',
             description: 'Secured our first enterprise client and delivered a successful e-commerce platform.',
             icon: <FaTrophy />,
@@ -41,7 +41,7 @@ const OurStoryPage = () => {
         {
             year: '2025',
             title: 'Present Day',
-            description: '50+ team members, 500+ projects, serving clients in 15+ countries with cutting-edge solutions.',
+            description: '10+ team members, 50+ projects, serving clients in 15+ countries with cutting-edge solutions.',
             icon: <FaHeart />,
             color: '#32a162'
         },
@@ -243,9 +243,9 @@ const OurStoryPage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
                         {[
-                            { number: '10+', label: 'Years Experience' },
-                            { number: '500+', label: 'Projects Completed' },
-                            { number: '200+', label: 'Happy Clients' },
+                            { number: '6+', label: 'Years Experience' },
+                            { number: '50+', label: 'Projects Completed' },
+                            { number: '20+', label: 'Happy Clients' },
                             { number: '15+', label: 'Countries Served' },
                         ].map((stat, index) => (
                             <motion.div

@@ -41,7 +41,7 @@ const Footer = () => {
                     {/* Logo & Description */}
                     <div className="lg:col-span-1">
                         <Link to="/" className="flex items-center space-x-3 mb-6">
-                            <img src="/assets/logo1.png" alt="Lifeboat" className="w-30 h-30 object-contain" />
+                            <img src="/assets/LOGO  LIFE11.png" alt="Lifeboat" className="w-25 h-24 object-contain" />
                             {/* <span className="text-2xl font-bold font-display">
                                 Lifeboat <span className="text-[#32a162]">Tech</span>
                             </span> */}

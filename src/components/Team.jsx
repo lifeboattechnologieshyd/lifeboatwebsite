@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const Team = () => {
     const [hoveredMember, setHoveredMember] = useState(null)
-    const navigate = useNavigate()  // ✅ Added navigation
+    const navigate = useNavigate()
 
     const team = [
         {
@@ -13,24 +13,24 @@ const Team = () => {
             role: 'CEO & Founder',
             image: '/assets/ranjith.jpg',
             bio: 'Visionary leader with 15+ years in tech industry, driving innovation and growth',
-            expertise: ['Leadership', 'Strategy', 'Innovation'],
+            expertise: ['Leadership', 'Strategy', 'Innovation', 'Technology'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: 'www.linkedin.com/in/ranjith-padidala-profile',
                 email: 'ranjith@lifeboat.co.in'
             },
             stats: {
-                experience: '15+ Years',
-                projects: '200+',
-                awards: '25+'
+                experience: '11+ Years',
+                projects: '20+',
+                awards: '5+'
             }
         },
         {
             name: 'Sai Tej',
-            role: 'UI/UX Designer',
-            image: '/assets/saitej.jpg',
+            role: 'Product Head',
+            image: '/assets/Tej.jpeg',
             bio: 'Creating beautiful, intuitive user experiences that users love',
-            expertise: ['UI Design', 'UX Research', 'Design Systems'],
+            expertise: ['Product Design', 'UX/UX', 'Figma', 'Adobe XD'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
@@ -38,8 +38,8 @@ const Team = () => {
             },
             stats: {
                 experience: '8+ Years',
-                designs: '500+',
-                awards: '12+'
+                designs: '16+',
+                awards: '3+'
             }
         },
         {
@@ -47,15 +47,15 @@ const Team = () => {
             role: 'Senior Android Developer',
             image: '/assets/Abhinay.jpeg',
             bio: 'Proficient Android developer specializing in creating robust, scalable mobile applications with clean architecture and optimal performance.',
-            expertise: ['Kotlin/Java', 'MVVM/MVI Architecture', 'Coroutines/Flow'],
+            expertise: ['Kotlin/Java', 'Android', 'Kmp', 'Flutter'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: '#',
-                email: 'abhinay.android@lifeboat.co.in'
+                email: 'abhinay@lifeboat.co.in'
             },
             stats: {
-                experience: '6+ Years',
-                apps: '40+',
+                experience: '11+ Years',
+                apps: '20+',
                 reviews: '2000+'
             }
         },
@@ -64,14 +64,14 @@ const Team = () => {
             role: 'System Architect',
             image: '/assets/Karthik.jpg',
             bio: 'Strategic system architect with expertise in designing robust, scalable enterprise solutions. Specializes in cloud migration, system integration, and performance optimization.',
-            expertise: ['Enterprise Architecture', 'AWS/Azure/GCP', 'Containerization'],
+            expertise: ['Python', 'Django', 'AWS', 'System Disign'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
                 email: 'karthik@lifeboat.co.in'
             },
             stats: {
-                experience: '10+ Years',
+                experience: '6+ Years',
                 projects: '30+',
                 performance: '+300%'
             }
@@ -81,15 +81,15 @@ const Team = () => {
             role: 'Python Developer',
             image: '/assets/charan.jpg',
             bio: 'Seasoned Python developer with extensive experience in backend development, microservices architecture, and building robust enterprise-grade applications.',
-            expertise: ['Python 3', 'FastAPI', 'Microservices'],
+            expertise: ['Python 3', 'FastAPI', 'Microservices', 'Django'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: '#',
                 email: 'charan.python@lifeboat.co.in'
             },
             stats: {
-                experience: '5+ Years',
-                microservices: '30+',
+                experience: '3+ Years',
+                services: '30+',
                 scalability: '10x'
             }
         },
@@ -98,14 +98,14 @@ const Team = () => {
             role: 'Frontend Developer',
             image: '/assets/pavan.jpg',
             bio: 'Passionate frontend developer focused on building user-friendly interfaces with clean code and optimal performance. Expertise in React ecosystem and modern CSS techniques.',
-            expertise: ['React & Redux', 'TypeScript', 'Next.js'],
+            expertise: ['HTML/CSS', 'JavaScript', 'React',],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
                 email: 'pavan.frontend@lifeboat.co.in'
             },
             stats: {
-                experience: '5+ Years',
+                experience: '3+ Years',
                 components: '500+',
                 optimized: '-60%'
             }
@@ -115,16 +115,16 @@ const Team = () => {
             role: 'iOS Developer',
             image: '/assets/musharaf.jpg',
             bio: 'Seasoned iOS developer with extensive experience in creating sophisticated mobile applications. Expertise includes advanced iOS frameworks, performance optimization, and implementing clean architecture.',
-            expertise: ['Swift Programming', 'iOS Architecture', 'Performance'],
+            expertise: ['Swift', 'iOS SDK', 'Mobile Development'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: 'https://www.linkedin.com/in/musharaf-mohammad-236b1120a',
                 email: 'musharaf@lifeboat.co.in'
             },
             stats: {
-                experience: '5+ Years',
-                apps: '30+',
-                reviews: '1000+'
+                experience: '1+ Years',
+                apps: '6+',
+                reviews: '500+'
             }
         },
         {
@@ -132,7 +132,7 @@ const Team = () => {
             role: 'Android Developer',
             image: '/assets/manasa.jpg',
             bio: 'Expert Android developer building high-performance mobile applications.',
-            expertise: ['Kotlin', 'Java', 'Android Studio'],
+            expertise: ['Kotlin', 'Android Development'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
@@ -146,18 +146,18 @@ const Team = () => {
         },
         {
             name: 'Prashanth Nimmala',
-            role: 'MERN Stack Developer',
+            role: 'Web Developer',
             image: '/assets/Prashanth.jpg',
             bio: 'Proficient MERN stack developer specializing in building scalable web applications with responsive interfaces and robust backend systems.',
-            expertise: ['MERN Stack', 'REST APIs', 'Redux'],
+            expertise: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: '#',
                 email: 'prashanth.dev@lifeboat.co.in'
             },
             stats: {
-                experience: '4+ Years',
-                applications: '60+',
+                experience: '1+ Years',
+                deployments: '10+',
                 endpoints: '200+'
             }
         },
@@ -166,15 +166,15 @@ const Team = () => {
             role: 'UI/UX Designer',
             image: '/assets/Harshini.jpg',
             bio: 'Award-winning UI/UX designer with expertise in creating visually stunning and highly functional digital products. Specializes in mobile app design and responsive web interfaces.',
-            expertise: ['Mobile UI Design', 'Responsive Web', 'Figma/XD'],
+            expertise: ['Mobile UI', 'Responsive', 'Figma/XD'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: 'https://www.linkedin.com/in/bonagiri-harshini-a325062a1',
                 email: 'harshini@lifeboat.co.in'
             },
             stats: {
-                experience: '6+ Years',
-                awards: '5+',
+                experience: '1+ Years',
+                designs: '5+',
                 satisfaction: '4.9/5'
             }
         },
@@ -183,14 +183,14 @@ const Team = () => {
             role: 'Graphic Designer',
             image: '/assets/anucharan.jpg',
             bio: 'Versatile graphic designer skilled in creating visually stunning marketing materials, logos, and branding assets. Combines artistic creativity with strategic thinking to deliver impactful designs.',
-            expertise: ['Logo & Branding', 'Marketing', 'Adobe Suite'],
+            expertise: ['Branding', 'Marketing', 'Adobe Suite'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: 'https://www.linkedin.com/in/enugula-anucharan-490282343/',
                 email: 'anucharan@lifeboat.co.in'
             },
             stats: {
-                experience: '5+ Years',
+                experience: '1+ Years',
                 logos: '100+',
                 campaigns: '30+'
             }
@@ -207,14 +207,13 @@ const Team = () => {
                 email: 'mahitha@lifeboat.co.in'
             },
             stats: {
-                experience: '8+ Years',
-                hires: '200+',
+                experience: '1+ Years',
+                hires: '10+',
                 retention: '95%'
             }
         }
     ]
 
-    // ✅ Navigation handler for View Open Positions
     const handleViewCareers = () => {
         navigate('/careers')
     }
@@ -331,36 +330,38 @@ const Team = () => {
                                     </div>
                                 </div>
 
-                                {/* Content - ✅ Fixed Alignment */}
+                                {/* Content - FIXED ALIGNMENT */}
                                 <div className="p-6 flex flex-col flex-grow">
-                                    <h3 className="text-xl font-bold mb-2 text-gray-900">
+                                    {/* Name - Fixed single line */}
+                                    <h3 className="text-xl font-bold text-gray-900 truncate h-7">
                                         {member.name}
                                     </h3>
 
-                                    <p className={`text-sm font-semibold mb-3 bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent`}>
+                                    {/* Role - Fixed height */}
+                                    <p className={`text-sm font-semibold mt-1 bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent h-5`}>
                                         {member.role}
                                     </p>
 
-                                    {/* ✅ Fixed height for bio */}
-                                    <p className="text-sm mb-4 text-gray-600 line-clamp-2 min-h-[40px]">
+                                    {/* Bio - Fixed 2 lines height */}
+                                    <p className="text-sm text-gray-600 line-clamp-2 mt-3 h-10">
                                         {member.bio}
                                     </p>
 
-                                    {/* ✅ Fixed Expertise Tags - always 3 */}
-                                    <div className="flex flex-wrap gap-2 mb-4 min-h-[60px]">
-                                        {member.expertise.slice(0, 3).map((skill, idx) => (
+                                    {/* Expertise Tags - Fixed height container */}
+                                    <div className="flex flex-wrap gap-1.5 mt-4 h-14 content-start overflow-hidden">
+                                        {member.expertise.map((skill, idx) => (
                                             <span
                                                 key={idx}
-                                                className="px-2 py-1 rounded-lg text-xs font-semibold bg-gray-200 text-gray-700"
+                                                className="px-2 py-1 rounded-lg text-xs font-semibold bg-gray-200 text-gray-700 whitespace-nowrap"
                                             >
                                                 {skill}
                                             </span>
                                         ))}
                                     </div>
 
-                                    {/* ✅ Fixed Stats - always at bottom, 3 columns */}
-                                    <div className="grid grid-cols-3 gap-2 mt-auto">
-                                        {Object.entries(member.stats).slice(0, 3).map(([key, value], idx) => (
+                                    {/* Stats - Fixed at bottom */}
+                                    <div className="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-gray-200">
+                                        {Object.entries(member.stats).map(([key, value], idx) => (
                                             <div key={idx} className="text-center p-2 rounded-lg bg-gray-100">
                                                 <div className={`text-xs font-black bg-gradient-to-r ${member.gradient} bg-clip-text text-transparent`}>
                                                     {value}
@@ -400,7 +401,7 @@ const Team = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        onClick={handleViewCareers}  // ✅ Added navigation
+                        onClick={handleViewCareers}
                         className="px-10 py-4 bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white rounded-xl font-bold text-lg shadow-lg"
                     >
                         View Open Positions →
