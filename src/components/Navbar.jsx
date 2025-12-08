@@ -54,7 +54,7 @@ const Navbar = () => {
                                 alt="Lifeboat Technologies"
                                 className="w-12 h-12 object-contain"
                             />
-                            <span className="text-2xl font-bold font-display hidden sm:block text-gray-900">
+                            <span className="text-2xl font-bold font-display text-gray-900">
                                 Lifeboat <span className="text-[#32a162]">Technologies</span>
                             </span>
                         </Link>

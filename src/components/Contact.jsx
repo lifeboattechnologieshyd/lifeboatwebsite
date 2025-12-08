@@ -11,9 +11,7 @@ const Contact = () => {
         name: '',
         email: '',
         phone: '',
-        company: '',
         service: '',
-        budget: '',
         message: '',
     })
     const [errors, setErrors] = useState({})
@@ -22,20 +20,13 @@ const Contact = () => {
 
     const services = [
         'Web Development',
-        'Mobile App Development',
+        'Android App Development',
         'AI/ML Solutions',
         'Cloud & DevOps',
         'UI/UX Design',
-        'Consulting',
+        'iOS App Development',
+        'SMS & WhatsApp Marketing',
         'Other'
-    ]
-
-    const budgets = [
-        '< $10,000',
-        '$10,000 - $25,000',
-        '$25,000 - $50,000',
-        '$50,000 - $100,000',
-        '> $100,000'
     ]
 
     const contactInfo = [
@@ -45,7 +36,7 @@ const Contact = () => {
             info: 'contact@lifeboat.co.in',
             subInfo: 'We reply within 24 hours',
             gradient: 'from-[#3234a2] to-[#32a162]',
-            link: 'mailto:hello@lifeboat.tech'
+            link: 'mailto:contact@lifeboat.co.in'
         },
         {
             icon: <FaPhone className="text-2xl" />,
@@ -117,9 +108,7 @@ const Contact = () => {
                 name: '',
                 email: '',
                 phone: '',
-                company: '',
                 service: '',
-                budget: '',
                 message: '',
             })
             setTimeout(() => setIsSubmitted(false), 5000)
@@ -238,76 +227,39 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-                                    {/* Phone & Company */}
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        <div>
-                                            <label className="block text-sm font-semibold mb-2 text-gray-700">
-                                                Phone Number
-                                            </label>
-                                            <motion.input
-                                                whileFocus={{ scale: 1.02 }}
-                                                type="tel"
-                                                name="phone"
-                                                value={formData.phone}
-                                                onChange={handleChange}
-                                                className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
-                                                placeholder="+91 7569787335"
-                                            />
-                                        </div>
-
-                                        <div>
-                                            <label className="block text-sm font-semibold mb-2 text-gray-700">
-                                                Company Name
-                                            </label>
-                                            <motion.input
-                                                whileFocus={{ scale: 1.02 }}
-                                                type="text"
-                                                name="company"
-                                                value={formData.company}
-                                                onChange={handleChange}
-                                                className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
-                                                placeholder="Your Company"
-                                            />
-                                        </div>
+                                    {/* Phone Number */}
+                                    <div>
+                                        <label className="block text-sm font-semibold mb-2 text-gray-700">
+                                            Phone Number
+                                        </label>
+                                        <motion.input
+                                            whileFocus={{ scale: 1.02 }}
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
+                                            placeholder="+91 9014651719"
+                                        />
                                     </div>
 
-                                    {/* Service & Budget */}
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                        <div>
-                                            <label className="block text-sm font-semibold mb-2 text-gray-700">
-                                                Service Interested In
-                                            </label>
-                                            <motion.select
-                                                whileFocus={{ scale: 1.02 }}
-                                                name="service"
-                                                value={formData.service}
-                                                onChange={handleChange}
-                                                className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
-                                            >
-                                                <option value="">Select a service</option>
-                                                {services.map((service) => (
-                                                    <option key={service} value={service}>{service}</option>
-                                                ))}
-                                            </motion.select>
-                                        </div>
-
-                                        <div>
-                                            <label className="block text-sm font-semibold mb-2 text-gray-700">
-                                                Project Budget
-                                            </label>
-                                            <motion.select
-                                                whileFocus={{ scale: 1.02 }}
-                                                name="budget"
-                                                value={formData.budget}
-                                                onChange={handleChange}
-                                                className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
-                                            >
-                                                <option value="">Select budget range</option>
-                                                {budgets.map((budget) => (
-                                                    <option key={budget} value={budget}>{budget}</option>
-                                                ))}
-                                            </motion.select>
-                                        </div>
+                                    {/* Service */}
+                                    <div>
+                                        <label className="block text-sm font-semibold mb-2 text-gray-700">
+                                            Service Interested In
+                                        </label>
+                                        <motion.select
+                                            whileFocus={{ scale: 1.02 }}
+                                            name="service"
+                                            value={formData.service}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 rounded-xl border-2 bg-white border-gray-300 text-gray-900 focus:border-[#3234a2] outline-none transition-all"
+                                        >
+                                            <option value="">Select a service</option>
+                                            {services.map((service) => (
+                                                <option key={service} value={service}>{service}</option>
+                                            ))}
+                                        </motion.select>
                                     </div>
 
                                     {/* Message */}

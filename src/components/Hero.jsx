@@ -10,9 +10,9 @@ const Hero = () => {
                 <img
                     src="/assets/Hero.jpg"
                     alt="Tech Background"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-2560 h-1440 object-cover opacity-120"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white/70"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/40 to-white/70"></div>
             </div>
 
             {/* Floating Particles */}

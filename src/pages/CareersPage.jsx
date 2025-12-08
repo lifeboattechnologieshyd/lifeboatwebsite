@@ -16,9 +16,9 @@ const CareersPage = () => {
         {
             title: 'Senior React Developer',
             department: 'Engineering',
-            location: 'Hanamkonda / Remote',
+            location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '8-15 LPA',
+            salary: 'Based on Experience',
             skills: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
         },
         {
@@ -26,23 +26,23 @@ const CareersPage = () => {
             department: 'Mobile',
             location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '6-12 LPA',
+            salary: 'Based on Experience',
             skills: ['Kotlin', 'Java', 'Android SDK', 'Firebase'],
         },
         {
             title: 'UI/UX Designer',
             department: 'Design',
-            location: 'Hanamkonda / Remote',
+            location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '5-10 LPA',
+            salary: 'Based on Experience',
             skills: ['Figma', 'Adobe XD', 'Prototyping', 'User Research'],
         },
         {
             title: 'DevOps Engineer',
             department: 'Infrastructure',
-            location: 'Remote',
+            location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '10-18 LPA',
+            salary: 'Based on Experience',
             skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD'],
         },
         {
@@ -50,7 +50,7 @@ const CareersPage = () => {
             department: 'Engineering',
             location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '7-14 LPA',
+            salary: 'Based on Experience',
             skills: ['Python', 'Django', 'FastAPI', 'PostgreSQL'],
         },
         {
@@ -58,7 +58,7 @@ const CareersPage = () => {
             department: 'Marketing',
             location: 'Hanamkonda',
             type: 'Full-time',
-            salary: '3-6 LPA',
+            salary: 'Based on Experience',
             skills: ['SEO', 'Social Media', 'Google Ads', 'Analytics'],
         },
     ]
@@ -211,7 +211,7 @@ const CareersPage = () => {
                                     </div>
 
                                     <motion.a
-                                        href={`mailto:careers@lifeboat.co.in?subject=Application for ${job.title}`}
+                                        href={`mailto:Mahitha - hr@lifeboat.co.in?subject=Application for ${job.title}`}
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                         className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white rounded-xl font-semibold shadow-lg"

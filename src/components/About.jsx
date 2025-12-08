@@ -28,7 +28,7 @@ const About = () => {
     ]
 
     const achievements = [
-        { number: '6+', label: 'Years Experience', icon: '📅' },
+        { number: '7+', label: 'Years Experience', icon: '📅' },
         { number: '50+', label: 'Team Members', icon: '👥' },
         { number: '20+', label: 'Happy Clients', icon: '😊' },
         { number: '5+', label: 'Industry Awards', icon: '🏆' },

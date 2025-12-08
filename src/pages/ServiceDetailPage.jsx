@@ -27,6 +27,11 @@ const ServiceDetailPage = () => {
     const { serviceId } = useParams()
     const navigate = useNavigate()
 
+    // Function to get first letter of name for avatar
+    const getInitial = (name) => {
+        return name ? name.charAt(0).toUpperCase() : '?'
+    }
+
     // 📦 Complete Services Data - Using Brand Colors Only
     const servicesData = {
         'software-development': {
@@ -66,9 +71,8 @@ Whether you need a complete enterprise system, a customer-facing application, or
             ],
             testimonial: {
                 text: "The team delivered exceptional software that transformed our operations. Their technical expertise and commitment to quality exceeded our expectations.",
-                author: "Rahul Sharma",
-                role: "CTO, TechStart India",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
+                author: "Aruna Jannu",
+                role: "Founder, FamiliFirst"
             },
             faqs: [
                 { q: 'How long does software development take?', a: 'Timeline depends on complexity. Simple projects take 2-3 months, while complex systems can take 6-12 months.' },
@@ -118,9 +122,8 @@ Our team uses cutting-edge technologies like React, Next.js, Vue.js, and Angular
             ],
             testimonial: {
                 text: "Our new website has increased conversions by 150%. The team understood our vision and delivered beyond expectations.",
-                author: "Priya Patel",
-                role: "Marketing Director, GrowthCo",
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                author: "Supraja",
+                role: "Partner, Isha Trends"
             },
             faqs: [
                 { q: 'How long does it take to build a website?', a: 'Simple websites take 2-4 weeks, while complex web applications can take 2-4 months.' },
@@ -170,9 +173,8 @@ Our apps are designed for performance, security, and user engagement, helping bu
             ],
             testimonial: {
                 text: "Our app has over 50,000 downloads and a 4.8-star rating. The development team was professional and delivered an amazing product.",
-                author: "Amit Kumar",
-                role: "Founder, Dhuniya News",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                author: "Dayanand",
+                role: "Founder, Jamsa Entertainment pvt Ltd (Dhuniya News)"
             },
             faqs: [
                 { q: 'Should I build native or cross-platform?', a: 'It depends on your needs. Cross-platform (Flutter) is cost-effective, while native offers best performance.' },
@@ -224,8 +226,7 @@ Our team of AI specialists works closely with your business to identify automati
             testimonial: {
                 text: "AI automation reduced our customer support workload by 60% while improving response times. The ROI has been incredible.",
                 author: "Sneha Reddy",
-                role: "Operations Head, ServiceFirst",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+                role: "Operations Head, ServiceFirst"
             },
             faqs: [
                 { q: 'What business problems can AI solve?', a: 'AI can automate customer support, analyze data, predict trends, optimize operations, and much more.' },
@@ -276,9 +277,8 @@ Our certified cloud engineers ensure your infrastructure is optimized for perfor
             ],
             testimonial: {
                 text: "Moving to cloud with their DevOps practices reduced our deployment time from days to minutes. Incredible transformation!",
-                author: "Vikram Singh",
-                role: "CTO, FinTech Startup",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+                author: "Dr. Paranjyothi Js",
+                role: "Founder, Paranpara Educational Policy Pvt Ltd"
             },
             faqs: [
                 { q: 'Which cloud provider should I choose?', a: 'It depends on your needs. AWS is most popular, Azure integrates well with Microsoft, and GCP excels in data/AI.' },
@@ -332,8 +332,7 @@ With 98% open rates for SMS and growing WhatsApp usage, these channels provide u
             testimonial: {
                 text: "WhatsApp marketing increased our customer engagement by 300%. The delivery rates and response rates are incredible!",
                 author: "Meera Joshi",
-                role: "Marketing Manager, RetailBrand",
-                image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop"
+                role: "Marketing Manager, RetailBrand"
             },
             faqs: [
                 { q: 'Is WhatsApp marketing legal?', a: "Yes, when done with proper consent and using official WhatsApp Business API, it's completely legal and compliant." },
@@ -388,8 +387,7 @@ We follow a user-centered design process that ensures every decision is backed b
             testimonial: {
                 text: "The design team transformed our app's user experience. User satisfaction scores increased by 45% after the redesign!",
                 author: "Ravi Menon",
-                role: "Product Manager, AppStart",
-                image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop"
+                role: "Product Manager, AppStart"
             },
             faqs: [
                 { q: "What's the difference between UI and UX?", a: 'UX is about the overall experience and usability, while UI is about the visual design and interface elements.' },
@@ -443,8 +441,7 @@ Whether you're launching your first online store or scaling an existing business
             testimonial: {
                 text: "Our e-commerce store generates ₹50 lakh monthly revenue. The platform is robust, fast, and our customers love the shopping experience!",
                 author: "Fatima Sheikh",
-                role: "Founder, Ishu's Store",
-                image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop"
+                role: "Founder, Ishu's Store"
             },
             faqs: [
                 { q: 'Which e-commerce platform is best?', a: 'It depends on your needs. Shopify is great for quick launch, WooCommerce for WordPress, and custom for unique requirements.' },
@@ -498,8 +495,7 @@ Our dedicated support team is always available to help you resolve issues quickl
             testimonial: {
                 text: "Their support team resolved a critical issue at 2 AM within 30 minutes. That's the kind of reliability you need for business applications.",
                 author: "Dr. Anil Gupta",
-                role: "IT Director, Hospital Chain",
-                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+                role: "IT Director, Hospital Chain"
             },
             faqs: [
                 { q: "What's your average response time?", a: 'For critical issues, we respond within 30 minutes. Standard issues are addressed within 2-4 hours.' },
@@ -736,7 +732,6 @@ Our dedicated support team is always available to help you resolve issues quickl
                     viewport={{ once: true }}
                     className="mb-12"
                 >
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Pricing Plans</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {service.pricing.map((plan, idx) => (
                             <motion.div
@@ -777,7 +772,7 @@ Our dedicated support team is always available to help you resolve issues quickl
                     </div>
                 </motion.section>
 
-                {/* Testimonial */}
+                {/* Testimonial - WITH FIRST LETTER AVATAR */}
                 <motion.section
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -787,11 +782,13 @@ Our dedicated support team is always available to help you resolve issues quickl
                     <FaQuoteLeft className="text-4xl text-white/30 mb-4" />
                     <p className="text-xl italic mb-6">"{service.testimonial.text}"</p>
                     <div className="flex items-center gap-4">
-                        <img
-                            src={service.testimonial.image}
-                            alt={service.testimonial.author}
-                            className="w-14 h-14 rounded-full object-cover border-2 border-white/30"
-                        />
+                        {/* Avatar with First Letter - REPLACED IMAGE */}
+                        <motion.div
+                            whileHover={{ scale: 1.1, rotate: 5 }}
+                            className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center text-white font-bold text-2xl flex-shrink-0 shadow-lg"
+                        >
+                            {getInitial(service.testimonial.author)}
+                        </motion.div>
                         <div>
                             <div className="font-bold">{service.testimonial.author}</div>
                             <div className="text-white/70">{service.testimonial.role}</div>

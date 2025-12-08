@@ -26,7 +26,7 @@ const Services = () => {
             title: 'Software Development',
             description: 'Custom software solutions tailored to your business needs with modern technologies, scalable architecture, and best practices.',
             gradient: 'from-[#3234a2] to-[#32a162]',
-            image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
+            image: 'assets/SD.jpg',
             features: ['Custom Solutions', 'Scalable Architecture', 'Clean Code', 'Agile Development'],
             stats: { projects: '150+', clients: '80+', satisfaction: '98%' }
         },
@@ -36,7 +36,7 @@ const Services = () => {
             title: 'Web Applications',
             description: 'Responsive, fast, and scalable web applications that deliver exceptional user experiences across all devices.',
             gradient: 'from-[#3234a2] to-[#4a4cff]',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+            image: 'assets/WA.png',
             features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern UI/UX'],
             stats: { websites: '200+', uptime: '99.9%', speed: '<2s' }
         },
@@ -46,7 +46,7 @@ const Services = () => {
             title: 'Mobile Applications',
             description: 'Native and cross-platform mobile applications for iOS and Android with stunning interfaces and smooth performance.',
             gradient: 'from-[#32a162] to-[#3bc475]',
-            image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop',
+            image: 'https://cdn.dribbble.com/userupload/44375652/file/2af4d256c459330818a44050ed9252aa.png?format=webp&resize=640x480&vertical=center',
             features: ['iOS & Android', 'Cross-Platform', 'Offline Support', 'Push Notifications'],
             stats: { apps: '100+', downloads: '5M+', rating: '4.8★' }
         },
@@ -56,7 +56,7 @@ const Services = () => {
             title: 'AI & Automation',
             description: 'Intelligent automation solutions powered by machine learning and artificial intelligence to transform your business.',
             gradient: 'from-[#3234a2] to-[#32a162]',
-            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
+            image: 'https://cdn.dribbble.com/userupload/45954869/file/4a6837b648058496132dc032b66885cf.png?format=webp&resize=400x300&vertical=center',
             features: ['Machine Learning', 'Process Automation', 'Chatbots', 'Predictive Analytics'],
             stats: { automation: '70%', accuracy: '95%', savings: '40%' }
         },
@@ -66,7 +66,7 @@ const Services = () => {
             title: 'Cloud & DevOps',
             description: 'Scalable cloud infrastructure and DevOps practices for reliable, secure, and efficient operations.',
             gradient: 'from-[#32a162] to-[#288a52]',
-            image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
+            image: 'https://cdn.dribbble.com/userupload/44629871/file/577d598817ea9920d1d2b0828bf5a2bf.png?format=webp&resize=400x300&vertical=center',
             features: ['AWS/Azure/GCP', 'CI/CD Pipeline', 'Docker & Kubernetes', '24/7 Monitoring'],
             stats: { uptime: '99.99%', deployments: '500+', servers: '200+' }
         },
@@ -76,7 +76,7 @@ const Services = () => {
             title: 'SMS & WhatsApp Marketing',
             description: 'Powerful SMS and WhatsApp marketing solutions to reach your customers directly with personalized campaigns.',
             gradient: 'from-[#3234a2] to-[#4a4cff]',
-            image: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop',
+            image: 'https://cdn.dribbble.com/userupload/16250046/file/original-bb2b72c8e878076959809f11520b51ea.png?crop=0x0-2048x1536&format=webp&resize=400x300&vertical=center',
             features: ['Bulk SMS', 'WhatsApp Business API', 'Campaign Analytics', 'Automated Messages'],
             stats: { messages: '10M+', delivery: '99%', clients: '500+' }
         },
@@ -86,7 +86,7 @@ const Services = () => {
             title: 'UI/UX Design',
             description: 'Beautiful, intuitive, and user-centered designs that create memorable digital experiences for your users.',
             gradient: 'from-[#32a162] to-[#3bc475]',
-            image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop',
+            image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=400&fit=crop',
             features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
             stats: { designs: '300+', users: '1M+', satisfaction: '97%' }
         },
@@ -96,7 +96,7 @@ const Services = () => {
             title: 'E-Commerce Solutions',
             description: 'Complete e-commerce solutions from online stores to multi-vendor marketplaces with secure payment integration.',
             gradient: 'from-[#3234a2] to-[#32a162]',
-            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+            image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop',
             features: ['Online Stores', 'Payment Gateway', 'Inventory Management', 'Order Tracking'],
             stats: { stores: '100+', transactions: '$50M+', products: '1M+' }
         },
@@ -106,7 +106,7 @@ const Services = () => {
             title: 'Support & Maintenance',
             description: '24/7 technical support and maintenance services to keep your applications running smoothly and securely.',
             gradient: 'from-[#32a162] to-[#288a52]',
-            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
+            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop',
             features: ['24/7 Support', 'Bug Fixes', 'Security Updates', 'Performance Optimization'],
             stats: { response: '<1hr', resolution: '95%', clients: '200+' }
         }
@@ -180,8 +180,8 @@ const Services = () => {
                         >
                             <div className="h-full rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-xl hover:shadow-2xl transition-all duration-500 relative">
 
-                                {/* Image with Overlay */}
-                                <div className="relative h-48 overflow-hidden">
+                                {/* Image with Overlay - INCREASED SIZE */}
+                                <div className="relative h-64 overflow-hidden">
                                     <img
                                         src={service.image}
                                         alt={service.title}

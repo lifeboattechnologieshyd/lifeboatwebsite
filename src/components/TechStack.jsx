@@ -8,7 +8,8 @@ import {
     SiTypescript, SiMongodb, SiGraphql, SiKubernetes,
     SiRedis, SiPostgresql, SiTailwindcss, SiNextdotjs,
     SiNestjs, SiFigma, SiFirebase, SiVercel,
-    SiKotlin
+    SiKotlin,
+    SiJavascript
 } from 'react-icons/si'
 
 const TechStack = () => {
@@ -54,10 +55,10 @@ const TechStack = () => {
             proficiency: 93
         },
         {
-            name: 'GraphQL',
-            Icon: SiGraphql,
+            name: 'JavaScript',
+            Icon: SiJavascript,
             color: 'accent',
-            iconColor: 'text-[#E10098]',
+            iconColor: 'text-[#F7DF1E]',
             description: 'API Query',
             proficiency: 85
         },
@@ -137,7 +138,7 @@ const TechStack = () => {
             name: 'Kotlin',
             Icon: SiKotlin,
             color: 'accent',
-            iconColor: 'text-[#06B6D4]',
+            iconColor: 'text-[#7F52FF]',
             description: 'Android Framework',
             proficiency: 96
         },

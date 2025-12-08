@@ -30,7 +30,7 @@ const Team = () => {
             role: 'Product Head',
             image: '/assets/Tej.jpeg',
             bio: 'Creating beautiful, intuitive user experiences that users love',
-            expertise: ['Product Design', 'UX/UX', 'Figma', 'Adobe XD'],
+            expertise: ['Product Design', 'UI/UX', 'Figma', 'Adobe XD'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',

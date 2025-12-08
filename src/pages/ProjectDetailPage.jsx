@@ -55,7 +55,7 @@ The app supports multiple Indian languages including Hindi, English, Telugu, Tam
                 'Push Notifications for Breaking News',
                 'Personalized News Digest'
             ],
-            technologies: ['Flutter', 'Dart', 'Firebase', 'News API', 'TensorFlow Lite', 'Hive DB', 'Provider', 'FCM', 'Google Analytics'],
+            technologies: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis', 'PostgreSQL', 'Android', 'iOS'],
             gradient: 'from-[#3234a2] to-cyan-500',
             images: [
                 '/assets/Dhuniya.jpeg',
@@ -146,7 +146,7 @@ The platform supports multiple user roles with dedicated dashboards:
                 'Leave Application Management',
                 'Multi-school Support'
             ],
-            technologies: ['Flutter', 'Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Firebase', 'AWS', 'WebSocket', 'Razorpay'],
+            technologies: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis', 'PostgreSQL', 'Android', 'iOS'],
             gradient: 'from-yellow-500 to-orange-500',
             images: [
                 '/assets/SF.png',
@@ -238,7 +238,7 @@ All communications are end-to-end encrypted, ensuring that family moments stay w
                 'Recipe Sharing',
                 'End-to-End Encryption'
             ],
-            technologies: ['React Native', 'Firebase', 'TypeScript', 'Node.js', 'MongoDB', 'Socket.io', 'AWS S3', 'FCM'],
+            technologies: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis', 'PostgreSQL', 'Android', 'iOS'],
             gradient: 'from-[#32a162] to-teal-500',
             images: [
                 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop',
@@ -327,7 +327,7 @@ The platform celebrates modest fashion while embracing modern e-commerce capabil
                 'Customer Reviews & Ratings',
                 'Loyalty Points Program'
             ],
-            technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js', 'MongoDB', 'Stripe', 'AWS', 'Algolia'],
+            technologies: ['Shoppify'],
             gradient: 'from-[#32a162] to-teal-500',
             images: [
                 '/assets/Ishu store.jpg',
@@ -414,7 +414,7 @@ The platform makes kids' clothing shopping enjoyable, efficient, and affordable 
                 'Seasonal Sales',
                 'Easy Navigation by Age Group'
             ],
-            technologies: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS', 'Redis', 'Cloudinary'],
+            technologies: ['Shoppify'],
             gradient: 'from-pink-500 to-purple-500',
             images: [
                 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=800&h=600&fit=crop',
@@ -500,7 +500,7 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 'Wishlist & Collections',
                 'Express Delivery Options'
             ],
-            technologies: ['Angular', 'Ionic', 'Node.js', 'MongoDB', 'AWS', 'Stripe', 'ML Kit', 'Firebase'],
+            technologies: ['Python', 'Django', 'React', 'Android', 'iOS'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             images: [
                 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&h=600&fit=crop',

@@ -1,5 +1,15 @@
 import { motion } from 'framer-motion'
-import { FaHeart, FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import {
+    FaHeart,
+    FaLinkedin,
+    FaTwitter,
+    FaInstagram,
+    FaEnvelope,
+    FaPhone,
+    FaMapMarkerAlt,
+    FaYoutube,      // Added
+    FaFacebook      // Added
+} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -11,7 +21,7 @@ const Footer = () => {
             { name: 'Mobile Apps', path: '/services' },
             { name: 'AI & ML', path: '/services' },
             { name: 'Cloud Solutions', path: '/services' },
-            { name: 'UI/UX Design', path: '/services' },
+            { name: 'SMS & WhatsApp Marketing', path: '/services' },
         ],
         Company: [
             { name: 'About Us', path: '/about' },
@@ -28,9 +38,38 @@ const Footer = () => {
         { name: 'Hanamkonda, Telangana', href: 'https://maps.app.goo.gl/xynyqCDBtkNt5KFN6', icon: FaMapMarkerAlt },
     ]
 
+    // ✅ Updated Social Links with correct URLs
     const socialLinks = [
-        { Icon: FaLinkedin, link: 'https://linkedin.com/company/lifeboat-tech' },
-        { Icon: FaInstagram, link: 'https://instagram.com/lifeboattech' },
+        {
+            Icon: FaYoutube,
+            link: 'https://www.youtube.com/channel/UCoTSMlJhz2MQkOUJrrVHzHQ',
+            label: 'YouTube',
+            hoverColor: 'hover:bg-red-600'
+        },
+        {
+            Icon: FaTwitter,
+            link: 'https://x.com/iamLifeboat',
+            label: 'Twitter',
+            hoverColor: 'hover:bg-black'
+        },
+        {
+            Icon: FaInstagram,
+            link: 'https://www.instagram.com/lifeboat_technologies/',
+            label: 'Instagram',
+            hoverColor: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500'
+        },
+        {
+            Icon: FaLinkedin,
+            link: 'https://www.linkedin.com/company/lifeboat-technologies-india/',
+            label: 'LinkedIn',
+            hoverColor: 'hover:bg-blue-600'
+        },
+        {
+            Icon: FaFacebook,
+            link: 'https://www.facebook.com/LifeboatTechnologies.Education/',
+            label: 'Facebook',
+            hoverColor: 'hover:bg-blue-700'
+        },
     ]
 
     return (
@@ -42,23 +81,22 @@ const Footer = () => {
                     <div className="lg:col-span-1">
                         <Link to="/" className="flex items-center space-x-3 mb-6">
                             <img src="/assets/LOGO  LIFE11.png" alt="Lifeboat" className="w-25 h-24 object-contain" />
-                            {/* <span className="text-2xl font-bold font-display">
-                                Lifeboat <span className="text-[#32a162]">Tech</span>
-                            </span> */}
                         </Link>
                         <p className="text-gray-400 mb-6">
                             Building the future, one line of code at a time. Transform your ideas into innovative digital solutions.
                         </p>
-                        {/* Social Links */}
-                        <div className="flex gap-3">
+
+                        {/* ✅ Updated Social Links Section */}
+                        <div className="flex flex-wrap gap-3">
                             {socialLinks.map((social, index) => (
                                 <motion.a
                                     key={index}
                                     href={social.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label={social.label}
                                     whileHover={{ scale: 1.2, y: -3 }}
-                                    className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-[#3234a2] transition-all"
+                                    className={`w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white ${social.hoverColor} transition-all`}
                                 >
                                     <social.Icon className="text-lg" />
                                 </motion.a>

@@ -41,7 +41,7 @@ const OurStoryPage = () => {
         {
             year: '2025',
             title: 'Present Day',
-            description: '10+ team members, 50+ projects, serving clients in 15+ countries with cutting-edge solutions.',
+            description: '50+ team members, 50+ projects, serving clients in 15+ countries with cutting-edge solutions.',
             icon: <FaHeart />,
             color: '#32a162'
         },
@@ -243,7 +243,7 @@ const OurStoryPage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
                         {[
-                            { number: '6+', label: 'Years Experience' },
+                            { number: '7+', label: 'Years Experience' },
                             { number: '50+', label: 'Projects Completed' },
                             { number: '20+', label: 'Happy Clients' },
                             { number: '15+', label: 'Countries Served' },
