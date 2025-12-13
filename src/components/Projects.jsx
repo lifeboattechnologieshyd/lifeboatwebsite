@@ -48,7 +48,7 @@ const Projects = () => {
             title: 'FamiliFirst: Private, Connected Family App',
             category: 'mobile',
             description: 'A secure family management and communication app designed to help families stay connected, organized, and informed with shared calendars, event planning, reminders, and edutainment features.',
-            image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop',
+            image: '\\assets\\FF logo.jpeg',
             tags: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis'],
             gradient: 'from-[#32a162] to-teal-500',
             link: '#',
