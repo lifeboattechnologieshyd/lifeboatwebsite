@@ -128,18 +128,18 @@ const Team = () => {
             }
         },
         {
-            name: 'Manasa',
+            name: 'Akshay',
             role: 'Android Developer',
-            image: '/assets/manasa.jpg',
+            image: '/assets/akshay.jpeg',
             bio: 'Expert Android developer building high-performance mobile applications.',
             expertise: ['Kotlin', 'Android Development'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
-                email: 'manasa@lifeboat.co.in'
+                email: 'akshay@lifeboat.co.in'
             },
             stats: {
-                experience: '5+ Years',
+                experience: '1+ Years',
                 apps: '50+',
                 downloads: '1M+'
             }
