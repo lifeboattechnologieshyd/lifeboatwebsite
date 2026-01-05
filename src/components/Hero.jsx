@@ -1,18 +1,19 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { Link } from 'react-router-dom'
-import { useMemo } from 'react'
+import { useState } from 'react'
 
 const Hero = () => {
-    // Memoize particles to prevent re-render issues
-    const particles = useMemo(() => {
-        return [...Array(20)].map((_, i) => ({
+    // ✅ Fix: Use useState with lazy initializer instead of useMemo
+    // This prevents the "impure function during render" warning
+    const [particles] = useState(() => 
+        [...Array(20)].map((_, i) => ({
             id: i,
             left: Math.random() * 100,
             top: Math.random() * 100,
             duration: Math.random() * 10 + 10,
         }))
-    }, [])
+    )
 
     const stats = [
         { number: '500+', label: 'Projects Delivered', icon: '🎯' },

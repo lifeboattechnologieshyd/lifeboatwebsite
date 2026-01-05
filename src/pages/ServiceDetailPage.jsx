@@ -726,7 +726,7 @@ Our dedicated support team is always available to help you resolve issues quickl
                 </motion.section>
 
                 {/* Pricing */}
-                <motion.section
+                {/* <motion.section
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -770,7 +770,7 @@ Our dedicated support team is always available to help you resolve issues quickl
                             </motion.div>
                         ))}
                     </div>
-                </motion.section>
+                </motion.section> */}
 
                 {/* Testimonial - WITH FIRST LETTER AVATAR */}
                 <motion.section
@@ -847,13 +847,6 @@ Our dedicated support team is always available to help you resolve issues quickl
                     </div>
                 </motion.section>
             </div>
-
-            {/* Footer */}
-            <footer className="bg-gray-900 text-white py-8">
-                <div className="max-w-7xl mx-auto px-4 text-center">
-                    <p className="text-gray-400">© {new Date().getFullYear()} Your Company. All rights reserved.</p>
-                </div>
-            </footer>
         </div>
     )
 }
