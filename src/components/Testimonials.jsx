@@ -25,7 +25,7 @@ const Testimonials = () => {
         {
             name: 'Dr. Paranjyothi JS',
             role: 'Founder',
-            company: 'Paranpara Educational Policy Pvt LTD',
+            company: 'PARANPARA EDUCATIONAL POLICY PVT LTD',
             project: 'SchoolFirst Platform',
             feedback: 'The SchoolFirst ecosystem developed by Lifeboat Technologies has revolutionized how we manage education. From attendance to fee management, everything is streamlined. The platform now serves 500+ schools and 100K+ students. Their technical expertise and dedication are truly commendable!',
             rating: 5,
@@ -37,9 +37,9 @@ const Testimonials = () => {
             }
         },
         {
-            name: 'Mohammed Muskaan',
+            name: 'Mohammed Saif Ali Khan',
             role: 'Partner',
-            company: "Ishu's Store",
+            company: "ISHU'S STORE",
             project: 'E-Commerce App',
             feedback: "Lifeboat Technologies created a beautiful e-commerce platform for Ishu's Store that perfectly represents our modest fashion brand. The app's elegant design, seamless checkout, and personalized recommendations have helped us reach customers across 15+ countries. Our sales have grown exponentially!",
             rating: 5,
