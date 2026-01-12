@@ -51,16 +51,6 @@ const Services = () => {
             stats: { apps: '100+', downloads: '5M+', rating: '4.8★' }
         },
         {
-            id: 'ai-automation',
-            icon: <HiOutlineChip className="text-4xl" />,
-            title: 'AI & Automation',
-            description: 'Intelligent automation solutions powered by machine learning and artificial intelligence to transform your business.',
-            gradient: 'from-[#3234a2] to-[#32a162]',
-            image: 'https://cdn.dribbble.com/userupload/45954869/file/4a6837b648058496132dc032b66885cf.png?format=webp&resize=400x300&vertical=center',
-            features: ['Machine Learning', 'Process Automation', 'Chatbots', 'Predictive Analytics'],
-            stats: { automation: '70%', accuracy: '95%', savings: '40%' }
-        },
-        {
             id: 'cloud-devops',
             icon: <HiOutlineCloud className="text-4xl" />,
             title: 'Cloud & DevOps',

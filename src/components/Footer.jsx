@@ -33,7 +33,7 @@ const Footer = () => {
     }
 
     const contactInfo = [
-        { name: 'contact@lifeboat.co.in', href: 'mailto:contact@lifeboat.co.in', icon: FaEnvelope },
+        { name: 'contact@lifeboattechnologies.com', href: 'mailto:contact@lifeboattechnologies.com', icon: FaEnvelope },
         { name: '+91 9014651719', href: 'tel:+919014651719', icon: FaPhone },
         { name: 'Hanamkonda, Telangana', href: 'https://maps.app.goo.gl/xynyqCDBtkNt5KFN6', icon: FaMapMarkerAlt },
     ]

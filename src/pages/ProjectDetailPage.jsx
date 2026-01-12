@@ -551,6 +551,96 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 'Trend-driven & curated',
                 'Look and feel your best'
             ]
+        },
+        'iqrar-times': {
+            title: 'IQRAR TIMES',
+            subtitle: 'Digital News & Creative Media Platform',
+            category: 'web',
+            tagline: 'News, Stories & Entertainment – All in One Place',
+            description: 'A modern digital content platform delivering news, lifestyle articles, creative stories, and entertainment-focused media with a clean magazine-style layout.',
+            longDescription: `IQRAR TIMES is a modern digital content platform we developed to deliver engaging news, lifestyle articles, creative stories, and entertainment-focused media to readers worldwide.
+
+        Built with a clean magazine-style layout, the platform ensures that users get a seamless reading experience across all devices. From breaking news to in-depth features, creative fiction to lifestyle tips – IQRAR TIMES covers it all.
+
+        Key aspects of the platform:
+        • **Diverse Content Categories**: News, Lifestyle, Entertainment, Stories, and more
+        • **Magazine-Style Layout**: Clean, professional design for easy reading
+        • **Regular Updates**: Fresh content published daily
+        • **Mobile-Responsive**: Perfect reading experience on any device
+        • **SEO Optimized**: Content reaches the right audience through search engines
+
+        The platform serves as a one-stop destination for readers who want quality content that informs, entertains, and inspires. Our editorial team ensures that every piece of content meets high standards of quality and relevance.`,
+            features: [
+                'Clean Magazine-Style Layout',
+                'Multiple Content Categories',
+                'Daily Content Updates',
+                'Mobile-Responsive Design',
+                'Fast Loading Speed',
+                'SEO Optimized Articles',
+                'Social Media Integration',
+                'Newsletter Subscription',
+                'Related Articles Suggestions',
+                'Comment & Discussion Section',
+                'Author Profiles & Bios',
+                'Search & Filter Functionality',
+                'Trending Articles Section',
+                'Category-wise Navigation'
+            ],
+            technologies: ['WordPress', 'PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'SEO Tools'],
+            gradient: 'from-[#1a1a2e] via-[#16213e] to-[#0f3460]',
+            images: [
+                '/assets/iqrar1.jpg',
+                'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=800&h=600&fit=crop'
+            ],
+            liveLink: 'https://www.iqrartimes.com/',
+            githubLink: '',
+            websiteLink: 'https://www.iqrartimes.com/',
+            metrics: {
+                articles: '50+',
+                categories: '5+',
+                updates: 'Daily',
+                readers: '10K+',
+                authors: '5+',
+                engagement: '85%'
+            },
+            timeline: '2 Months',
+            team: '3 Members',
+            client: 'IQRAR TIMES Media',
+            year: '2024',
+            challenges: [
+                'Creating engaging magazine-style layout for diverse content',
+                'Optimizing website speed with rich media content',
+                'SEO optimization for maximum organic reach',
+                'Building intuitive navigation across multiple categories',
+                'Ensuring consistent brand identity across all pages',
+                'Mobile responsiveness with complex layouts'
+            ],
+            solutions: [
+                'Custom WordPress theme with magazine-style grid layouts',
+                'Image optimization, lazy loading, and CDN integration',
+                'Implemented Yoast SEO with structured data markup',
+                'Designed category-based navigation with breadcrumbs',
+                'Created style guide and consistent design components',
+                'Mobile-first approach with responsive breakpoints'
+            ],
+            testimonial: {
+                text: "IQRAR TIMES has become my go-to platform for quality content. The clean layout makes reading a pleasure, and I love the variety of topics covered!",
+                author: "Ahmed Khan",
+                role: "Regular Reader, Hyderabad"
+            },
+            results: [
+                { label: 'Page Load Speed', value: '<2s', description: 'Fast loading time' },
+                { label: 'Reader Engagement', value: '85%', description: 'Average read completion' },
+                { label: 'SEO Ranking', value: 'Top 10', description: 'For target keywords' }
+            ],
+            keyHighlights: [
+                'Modern digital content platform',
+                'Clean magazine-style design',
+                'Daily fresh content updates',
+                'Multi-category coverage'
+            ]
         }
     }
 

@@ -107,6 +107,23 @@ const Projects = () => {
                 'rating': '4.7/5'
             }
         },
+        {
+            id: 'iqrar-times',
+            title: 'IQRAR TIMES: Digital News & Creative Media Platform',
+            category: 'web',
+            description: 'A modern digital content platform delivering news, lifestyle articles, creative stories, and entertainment-focused media with a clean magazine-style layout and regularly updated featured content.',
+            image: '/assets/iqrar1.jpg',
+            tags: ['WordPress', 'News', 'Blog', 'Media', 'Content'],
+            gradient: 'from-[#1a1a2e] via-[#16213e] to-[#0f3460]',
+            link: 'https://www.iqrartimes.com/',
+            github: '',
+            metrics: {
+                'articles': '50+',
+                'categories': '5+',
+                'updates': 'Daily'
+            }
+        }
+
     ]
 
     const filteredProjects = filter === 'all'

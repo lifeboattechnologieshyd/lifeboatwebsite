@@ -16,7 +16,7 @@ const Team = () => {
             expertise: ['Leadership', 'Strategy', 'Innovation', 'Technology'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
-                linkedin: 'www.linkedin.com/in/ranjith-padidala-profile',
+                linkedin: 'https://www.linkedin.com/in/ranjith-padidala-profile/',
                 email: 'ranjith@lifeboat.co.in'
             },
             stats: {
@@ -85,7 +85,7 @@ const Team = () => {
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
                 linkedin: '#',
-                email: 'charan.python@lifeboat.co.in'
+                email: 'charan@lifeboat.co.in'
             },
             stats: {
                 experience: '3+ Years',
@@ -102,7 +102,7 @@ const Team = () => {
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
                 linkedin: '#',
-                email: 'pavan.frontend@lifeboat.co.in'
+                email: 'pavan@lifeboat.co.in'
             },
             stats: {
                 experience: '3+ Years',
@@ -135,7 +135,7 @@ const Team = () => {
             expertise: ['Kotlin', 'Android Development'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             social: {
-                linkedin: '#',
+                linkedin: 'https://www.linkedin.com/in/chaluvadiakshaybabu-undefined-49365a353/',
                 email: 'akshay@lifeboat.co.in'
             },
             stats: {
@@ -152,7 +152,7 @@ const Team = () => {
             expertise: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
             gradient: 'from-[#32a162] to-[#3234a2]',
             social: {
-                linkedin: '#',
+                linkedin: 'https://www.linkedin.com/in/nimmala-prashanth/',
                 email: 'prashanth.dev@lifeboat.co.in'
             },
             stats: {
@@ -305,7 +305,7 @@ const Team = () => {
                                             rel="noopener noreferrer"
                                             whileHover={{ scale: 1.2, rotate: 5 }}
                                             whileTap={{ scale: 0.9 }}
-                                            className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#0077b5] hover:text-white transition-all"
+                                            className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:text-white transition-all"
                                             style={{ color: '#0077b5' }}
                                         >
                                             <FaLinkedin className="text-xl" />
@@ -315,7 +315,7 @@ const Team = () => {
                                             href={`mailto:${member.social.email}`}
                                             whileHover={{ scale: 1.2, rotate: 5 }}
                                             whileTap={{ scale: 0.9 }}
-                                            className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-[#ea4335] hover:text-white transition-all"
+                                            className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:text-white transition-all"
                                             style={{ color: '#ea4335' }}
                                         >
                                             <FaEnvelope className="text-xl" />
