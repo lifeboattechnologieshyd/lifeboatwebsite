@@ -33,10 +33,10 @@ const Contact = () => {
         {
             icon: <FaEnvelope className="text-2xl" />,
             title: 'Email Us',
-            info: 'contact@lifeboat.co.in',
+            info: 'contact@lifeboattechnologies.com',
             subInfo: 'We reply within 24 hours',
             gradient: 'from-[#3234a2] to-[#32a162]',
-            link: 'mailto:contact@lifeboat.co.in'
+            link: 'mailto:contact@lifeboattechnologies.com'
         },
         {
             icon: <FaPhone className="text-2xl" />,
