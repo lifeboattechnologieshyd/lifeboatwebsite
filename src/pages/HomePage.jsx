@@ -20,7 +20,7 @@ const HomePage = () => {
       <Process />
       <TechStack />
       <About />
-      <Projects />
+      <Projects limit={9} />  {/* 👈 9 projects only */}
       <Team />
       <Testimonials />
       <FAQ />

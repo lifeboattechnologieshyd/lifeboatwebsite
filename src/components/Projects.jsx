@@ -1,14 +1,14 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaExternalLinkAlt, FaGithub, FaArrowRight } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaGithub, FaArrowRight, FaYoutube } from 'react-icons/fa'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const Projects = () => {
+const Projects = ({ limit = null, showViewAll = true }) => {  // 👈 Props add chesanu
     const [filter, setFilter] = useState('all')
     const [hoveredIndex, setHoveredIndex] = useState(null)
     const navigate = useNavigate()
 
-    const categories = ['all', 'web', 'mobile', 'ai']
+    const categories = ['all', 'web', 'mobile', 'ai', 'media']
 
     const projects = [
         {
@@ -48,7 +48,7 @@ const Projects = () => {
             title: 'FamiliFirst: Private, Connected Family App',
             category: 'mobile',
             description: 'A secure family management and communication app designed to help families stay connected, organized, and informed with shared calendars, event planning, reminders, and edutainment features.',
-            image: '\\assets\\FF logo.jpeg',
+            image: '/assets/FF logo.jpeg',
             tags: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis'],
             gradient: 'from-[#32a162] to-teal-500',
             link: '#',
@@ -62,10 +62,10 @@ const Projects = () => {
         {
             id: 'ishu-store',
             title: "Ishu's Store: Digital Modest Fashion",
-            category: 'mobile',
+            category: 'web',
             description: 'An elegant e-commerce platform for a modest fashion brand specializing in hijabs, abayas, and contemporary modest wear with curated collections, detailed product visuals, and personalized recommendations.',
             image: '/assets/Ishu store.jpg',
-            tags: ['Shoppify'],
+            tags: ['Shopify', 'E-Commerce', 'Fashion'],
             gradient: 'from-[#32a162] to-teal-500',
             link: 'https://ishustore.com/',
             github: '',
@@ -81,7 +81,7 @@ const Projects = () => {
             category: 'web',
             description: 'A vibrant e-commerce platform for children\'s fashion showcasing trendy, comfortable, and affordable kids\' clothing with smart size guides, fast checkout, and curated collections for modern families.',
             image: '/assets/ishaa.jpeg',
-            tags: ['Shoppify'],
+            tags: ['Shopify', 'E-Commerce', 'Kids Fashion'],
             gradient: 'from-pink-500 to-purple-500',
             link: '#',
             github: '',
@@ -113,7 +113,7 @@ const Projects = () => {
             category: 'web',
             description: 'A modern digital content platform delivering news, lifestyle articles, creative stories, and entertainment-focused media with a clean magazine-style layout and regularly updated featured content.',
             image: '/assets/iqrar1.jpg',
-            tags: ['WordPress', 'News', 'Blog', 'Media', 'Content'],
+            tags: ['React', 'Tailwindcss', 'Python', 'Django', 'Fastapi'],
             gradient: 'from-[#1a1a2e] via-[#16213e] to-[#0f3460]',
             link: 'https://www.iqrartimes.com/',
             github: '',
@@ -122,13 +122,81 @@ const Projects = () => {
                 'categories': '5+',
                 'updates': 'Daily'
             }
+        },
+        {
+            id: 'anand-ads',
+            title: 'Anand Ads: Digital Advertising & Marketing Agency',
+            category: 'web',
+            description: 'A professional digital advertising and marketing agency website showcasing comprehensive advertising solutions, creative campaigns, media buying services, and client success stories with modern design.',
+            image: '/assets/anand-ads.jpg',
+            tags: ['React', 'Tailwindcss', 'Python', 'Django', 'Fastapi'],
+            gradient: 'from-orange-500 to-red-600',
+            link: 'https://www.anandads.com',
+            github: '',
+            metrics: {
+                'clients': '200+',
+                'campaigns': '1K+',
+                'satisfaction': '99%'
+            }
+        },
+        {
+            id: 'paranpara',
+            title: 'Paranpara: Education Policy Platform',
+            category: 'web',
+            description: 'An educational platform for Paranpara Education Policy Private Limited, providing comprehensive resources, policy information, and innovative educational services for institutions and students across India.',
+            image: '/assets/paranpara.jpg',
+            tags: ['Education', 'Web Development', 'Policy', 'EdTech'],
+            gradient: 'from-blue-600 to-indigo-700',
+            link: 'https://paranpara.com',
+            github: '',
+            metrics: {
+                'institutions': '300+',
+                'students': '75K+',
+                'programs': '25+'
+            }
+        },
+        {
+            id: 'tiny-tales',
+            title: 'TinyTales: Kids Entertainment YouTube Channel',
+            category: 'media',
+            description: 'An in-house YouTube channel dedicated to creating engaging, educational, and entertaining content for children with animated stories, nursery rhymes, moral stories, and creative learning videos.',
+            image: '/assets/Tiny Tales.jpg',
+            tags: ['YouTube', 'Animation', 'Kids Content', 'Entertainment'],
+            gradient: 'from-red-500 to-pink-500',
+            link: 'https://www.youtube.com/@TinyTales1812',
+            github: '',
+            isYouTube: true,
+            metrics: {
+                'subscribers': '10K+',
+                'videos': '150+',
+                'views': '2M+'
+            }
+        },
+        {
+            id: 'sapphire-house',
+            title: 'Sapphire House: Premium E-Commerce Platform',
+            category: 'web',
+            description: 'A sophisticated e-commerce platform offering premium lifestyle products with elegant design, seamless shopping experience, secure payment integration, and personalized customer recommendations.',
+            image: '/assets/SAPPHIRE.jpg',
+            tags: ['E-Commerce', 'React', 'python', 'Payment Gateway'],
+            gradient: 'from-blue-500 to-purple-600',
+            link: '#',
+            github: '',
+            metrics: {
+                'products': '5K+',
+                'customers': '20K+',
+                'rating': '4.8/5'
+            }
         }
-
     ]
 
+    // 👇 Filter first, then apply limit
     const filteredProjects = filter === 'all'
         ? projects
         : projects.filter(p => p.category.toLowerCase() === filter)
+
+    // 👇 Apply limit if provided
+    const displayedProjects = limit ? filteredProjects.slice(0, limit) : filteredProjects
 
     const handleViewAllProjects = () => {
         navigate('/projects')
@@ -194,23 +262,25 @@ const Projects = () => {
                         Showcasing our latest work and success stories across industries
                     </p>
 
-                    {/* Filter Buttons */}
-                    <div className="flex flex-wrap justify-center gap-3">
-                        {categories.map((category) => (
-                            <motion.button
-                                key={category}
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                onClick={() => setFilter(category)}
-                                className={`px-6 py-2 rounded-xl font-semibold capitalize transition-all duration-300 ${filter === category
-                                    ? 'bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white shadow-lg'
-                                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
-                                    }`}
-                            >
-                                {category}
-                            </motion.button>
-                        ))}
-                    </div>
+                    {/* Filter Buttons - Only show when no limit (full page) */}
+                    {!limit && (
+                        <div className="flex flex-wrap justify-center gap-3">
+                            {categories.map((category) => (
+                                <motion.button
+                                    key={category}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    onClick={() => setFilter(category)}
+                                    className={`px-6 py-2 rounded-xl font-semibold capitalize transition-all duration-300 ${filter === category
+                                        ? 'bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white shadow-lg'
+                                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                                        }`}
+                                >
+                                    {category}
+                                </motion.button>
+                            ))}
+                        </div>
+                    )}
                 </motion.div>
 
                 {/* Projects Grid */}
@@ -219,7 +289,7 @@ const Projects = () => {
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
                     <AnimatePresence mode="popLayout">
-                        {filteredProjects.map((project, index) => (
+                        {displayedProjects.map((project, index) => (
                             <motion.div
                                 key={project.id}
                                 layout
@@ -264,7 +334,11 @@ const Projects = () => {
                                                     whileTap={{ scale: 0.9 }}
                                                     className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100"
                                                 >
-                                                    <FaExternalLinkAlt className="text-gray-900" />
+                                                    {project.isYouTube ? (
+                                                        <FaYoutube className="text-red-600 text-xl" />
+                                                    ) : (
+                                                        <FaExternalLinkAlt className="text-gray-900" />
+                                                    )}
                                                 </motion.a>
                                             )}
                                             {project.github && project.github !== '' && project.github !== '#' && (
@@ -284,8 +358,12 @@ const Projects = () => {
 
                                         {/* Category Badge */}
                                         <div className="absolute top-4 right-4">
-                                            <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-gray-900 capitalize">
-                                                {project.category}
+                                            <span className={`px-3 py-1 rounded-full text-xs font-bold backdrop-blur-sm capitalize ${
+                                                project.isYouTube 
+                                                    ? 'bg-red-500/90 text-white' 
+                                                    : 'bg-white/90 text-gray-900'
+                                            }`}>
+                                                {project.isYouTube ? '▶ YouTube' : project.category}
                                             </span>
                                         </div>
                                     </div>
@@ -343,7 +421,7 @@ const Projects = () => {
                                             }}
                                             className={`flex items-center space-x-2 font-bold bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent group/btn`}
                                         >
-                                            <span>View Project</span>
+                                            <span>{project.isYouTube ? 'Watch Channel' : 'View Project'}</span>
                                             <FaArrowRight className="group-hover/btn:translate-x-1 transition-transform text-[#3234a2]" />
                                         </motion.button>
                                     </div>
@@ -353,22 +431,24 @@ const Projects = () => {
                     </AnimatePresence>
                 </motion.div>
 
-                {/* View All Button with Navigation */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mt-12"
-                >
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={handleViewAllProjects}
-                        className="px-10 py-4 bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+                {/* View All Button - Only show if showViewAll is true AND limit is set */}
+                {showViewAll && limit && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mt-12"
                     >
-                        View All Projects →
-                    </motion.button>
-                </motion.div>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={handleViewAllProjects}
+                            className="px-10 py-4 bg-gradient-to-r from-[#3234a2] to-[#32a162] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-shadow"
+                        >
+                            View All Projects →
+                        </motion.button>
+                    </motion.div>
+                )}
             </div>
         </section>
     )

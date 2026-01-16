@@ -15,7 +15,8 @@ import {
     FaQuoteLeft,
     FaGooglePlay,
     FaAppStore,
-    FaGlobe
+    FaGlobe,
+    FaYoutube
 } from 'react-icons/fa'
 import { useState } from 'react'
 
@@ -24,7 +25,7 @@ const ProjectDetailPage = () => {
     const navigate = useNavigate()
     const [selectedImage, setSelectedImage] = useState(0)
 
-    // 📦 Complete Project Data with Correct Details
+    // 📦 Complete Project Data with All Projects
     const projectData = {
         'dhuniya-news': {
             title: 'Dhuniya',
@@ -241,10 +242,10 @@ All communications are end-to-end encrypted, ensuring that family moments stay w
             technologies: ['Kotlin', 'Swift', 'Python', 'Django', 'Redis', 'PostgreSQL', 'Android', 'iOS'],
             gradient: 'from-[#32a162] to-teal-500',
             images: [
+                '/assets/FF logo.jpeg',
                 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=600&fit=crop',
                 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop'
+                'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&h=600&fit=crop'
             ],
             liveLink: '#',
             githubLink: '',
@@ -296,7 +297,7 @@ All communications are end-to-end encrypted, ensuring that family moments stay w
         'ishu-store': {
             title: "Ishu's Store",
             subtitle: 'A Digital Storefront for Modest Fashion',
-            category: 'mobile',
+            category: 'web',
             tagline: 'Style, Comfort & Modesty – Delivered Globally',
             description: "Ishu's Store is an elegant e-commerce platform built for a modest fashion brand specializing in hijabs, abayas, and contemporary modest wear.",
             longDescription: `Ishu's Store is an elegant e-commerce platform built for a modest fashion brand specializing in hijabs, abayas, and contemporary modest wear.
@@ -327,7 +328,7 @@ The platform celebrates modest fashion while embracing modern e-commerce capabil
                 'Customer Reviews & Ratings',
                 'Loyalty Points Program'
             ],
-            technologies: ['Shoppify'],
+            technologies: ['Shopify', 'Liquid', 'JavaScript', 'CSS3', 'Payment Gateway'],
             gradient: 'from-[#32a162] to-teal-500',
             images: [
                 '/assets/Ishu store.jpg',
@@ -414,13 +415,13 @@ The platform makes kids' clothing shopping enjoyable, efficient, and affordable 
                 'Seasonal Sales',
                 'Easy Navigation by Age Group'
             ],
-            technologies: ['Shoppify'],
+            technologies: ['Shopify', 'Liquid', 'JavaScript', 'CSS3'],
             gradient: 'from-pink-500 to-purple-500',
             images: [
+                '/assets/ishaa.jpeg',
                 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=800&h=600&fit=crop',
                 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800&h=600&fit=crop'
+                'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop'
             ],
             liveLink: '#',
             githubLink: '',
@@ -503,10 +504,10 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
             technologies: ['Python', 'Django', 'React', 'Android', 'iOS'],
             gradient: 'from-[#3234a2] to-[#32a162]',
             images: [
+                '/assets/SRU.jpeg',
                 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&h=600&fit=crop',
                 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&h=600&fit=crop',
-                'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=600&fit=crop'
+                'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=800&h=600&fit=crop'
             ],
             liveLink: '#',
             githubLink: '',
@@ -552,6 +553,7 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 'Look and feel your best'
             ]
         },
+
         'iqrar-times': {
             title: 'IQRAR TIMES',
             subtitle: 'Digital News & Creative Media Platform',
@@ -560,16 +562,16 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
             description: 'A modern digital content platform delivering news, lifestyle articles, creative stories, and entertainment-focused media with a clean magazine-style layout.',
             longDescription: `IQRAR TIMES is a modern digital content platform we developed to deliver engaging news, lifestyle articles, creative stories, and entertainment-focused media to readers worldwide.
 
-        Built with a clean magazine-style layout, the platform ensures that users get a seamless reading experience across all devices. From breaking news to in-depth features, creative fiction to lifestyle tips – IQRAR TIMES covers it all.
+Built with a clean magazine-style layout, the platform ensures that users get a seamless reading experience across all devices. From breaking news to in-depth features, creative fiction to lifestyle tips – IQRAR TIMES covers it all.
 
-        Key aspects of the platform:
-        • **Diverse Content Categories**: News, Lifestyle, Entertainment, Stories, and more
-        • **Magazine-Style Layout**: Clean, professional design for easy reading
-        • **Regular Updates**: Fresh content published daily
-        • **Mobile-Responsive**: Perfect reading experience on any device
-        • **SEO Optimized**: Content reaches the right audience through search engines
+Key aspects of the platform:
+• **Diverse Content Categories**: News, Lifestyle, Entertainment, Stories, and more
+• **Magazine-Style Layout**: Clean, professional design for easy reading
+• **Regular Updates**: Fresh content published daily
+• **Mobile-Responsive**: Perfect reading experience on any device
+• **SEO Optimized**: Content reaches the right audience through search engines
 
-        The platform serves as a one-stop destination for readers who want quality content that informs, entertains, and inspires. Our editorial team ensures that every piece of content meets high standards of quality and relevance.`,
+The platform serves as a one-stop destination for readers who want quality content that informs, entertains, and inspires.`,
             features: [
                 'Clean Magazine-Style Layout',
                 'Multiple Content Categories',
@@ -641,6 +643,374 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 'Daily fresh content updates',
                 'Multi-category coverage'
             ]
+        },
+
+        // 🆕 NEW PROJECT: Anand Ads
+        'anand-ads': {
+            title: 'Anand Ads',
+            subtitle: 'Digital Advertising & Marketing Agency',
+            category: 'web',
+            tagline: 'Creative Campaigns That Drive Results',
+            description: 'A professional digital advertising and marketing agency website showcasing comprehensive advertising solutions, creative campaigns, and media buying services.',
+            longDescription: `Anand Ads is a leading digital advertising and marketing agency that we partnered with to build their online presence. The website showcases their comprehensive advertising solutions, creative campaigns, media buying services, and impressive client success stories.
+
+The platform serves as a powerful business tool that:
+• **Showcases Services**: Complete range of advertising and marketing solutions
+• **Displays Portfolio**: Creative campaigns and successful case studies
+• **Generates Leads**: Optimized contact forms and CTAs
+• **Builds Trust**: Client testimonials and industry credentials
+• **Drives Engagement**: Modern design that reflects creativity and professionalism
+
+The website is designed to position Anand Ads as a trusted partner for businesses looking to elevate their brand through strategic advertising. With a focus on conversion optimization, the site effectively turns visitors into potential clients.
+
+From traditional media to digital campaigns, social media marketing to brand strategy – the website communicates Anand Ads' expertise across all advertising channels.`,
+            features: [
+                'Modern Agency Portfolio Design',
+                'Service Showcase with Details',
+                'Client Case Studies & Success Stories',
+                'Campaign Gallery with Visuals',
+                'Lead Generation Forms',
+                'Client Testimonials Section',
+                'Team & About Us Pages',
+                'Blog & Industry Insights',
+                'Contact & Quote Request',
+                'Social Media Integration',
+                'Mobile-Responsive Design',
+                'SEO Optimized Pages',
+                'Fast Loading Performance',
+                'Analytics Integration'
+            ],
+            technologies: ['React', 'Tailwindcss', 'Python', 'Django', 'Fastapi'],
+            gradient: 'from-orange-500 to-red-600',
+            images: [
+                '/assets/anand-ads.jpg',
+                'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop'
+            ],
+            liveLink: 'https://www.anandads.com',
+            githubLink: '',
+            websiteLink: 'https://www.anandads.com',
+            metrics: {
+                clients: '200+',
+                campaigns: '1K+',
+                industries: '15+',
+                years: '10+',
+                satisfaction: '99%',
+                reach: '50M+'
+            },
+            timeline: '3 Months',
+            team: '4 Members',
+            client: 'Anand Ads Agency',
+            year: '2024',
+            challenges: [
+                'Showcasing diverse advertising services cohesively',
+                'Creating design that reflects creativity and professionalism',
+                'Optimizing for lead generation and conversions',
+                'Displaying portfolio without overwhelming visitors',
+                'Building trust with potential enterprise clients',
+                'Fast loading with high-quality campaign visuals'
+            ],
+            solutions: [
+                'Organized services into clear, navigable categories',
+                'Designed bold, creative UI with professional undertones',
+                'Implemented strategic CTAs and optimized contact forms',
+                'Created filterable portfolio with lightbox galleries',
+                'Added client logos, testimonials, and case studies',
+                'Image optimization and lazy loading for performance'
+            ],
+            testimonial: {
+                text: "Our new website perfectly captures our creative spirit while maintaining professionalism. Lead generation has increased by 150% since launch!",
+                author: "Anand Kumar",
+                role: "Founder, Anand Ads"
+            },
+            results: [
+                { label: 'Lead Increase', value: '150%', description: 'More inquiries generated' },
+                { label: 'Bounce Rate', value: '-40%', description: 'Improved engagement' },
+                { label: 'Page Speed', value: '95/100', description: 'Google PageSpeed score' }
+            ],
+            keyHighlights: [
+                'Creative agency portfolio',
+                'Lead generation focused',
+                'Professional brand presence',
+                'Conversion optimized design'
+            ]
+        },
+
+        // 🆕 NEW PROJECT: Paranpara Education
+        'paranpara': {
+            title: 'Paranpara',
+            subtitle: 'Education Policy Platform',
+            category: 'web',
+            tagline: 'Empowering Education Through Policy & Innovation',
+            description: 'An educational platform for Paranpara Education Policy Private Limited, providing comprehensive resources and innovative educational services for institutions and students across India.',
+            longDescription: `Paranpara Education Policy Private Limited is on a mission to transform education in India through policy advocacy, innovative programs, and comprehensive educational services. We developed their digital platform to support this vision.
+
+The platform serves multiple purposes:
+• **Policy Information**: Resources on education policies and their implementation
+• **Educational Services**: Programs and services for institutions and students
+• **Research & Insights**: Studies and reports on Indian education
+• **Community Building**: Connecting educators, institutions, and policymakers
+• **Resource Library**: Educational materials and guides
+
+Paranpara works with schools, colleges, and educational institutions across India to implement effective educational strategies aligned with national education policies like NEP 2020.
+
+The website positions Paranpara as a thought leader in Indian education policy while providing practical resources for educators and institutions seeking to improve their educational outcomes.`,
+            features: [
+                'Educational Policy Resources',
+                'Institution Partnership Programs',
+                'Student Development Services',
+                'Research & Publications Section',
+                'Event & Workshop Calendar',
+                'Resource Download Library',
+                'Institution Registration Portal',
+                'Contact & Inquiry Forms',
+                'Blog & News Updates',
+                'Team & Leadership Pages',
+                'Success Stories & Impact',
+                'Multi-language Support',
+                'Mobile-Responsive Design',
+                'SEO Optimized Content'
+            ],
+            technologies: ['React', 'Tailwindcss', 'Python', 'Django', 'Fastapi'],
+            gradient: 'from-blue-600 to-indigo-700',
+            images: [
+                '/assets/paranpara.jpg',
+                'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop'
+            ],
+            liveLink: 'https://paranpara.com',
+            githubLink: '',
+            websiteLink: 'https://paranpara.com',
+            metrics: {
+                institutions: '300+',
+                students: '75K+',
+                programs: '25+',
+                states: '15+',
+                educators: '5K+',
+                impact: '1M+'
+            },
+            timeline: '4 Months',
+            team: '5 Members',
+            client: 'Paranpara Education Policy Pvt Ltd',
+            year: '2024',
+            challenges: [
+                'Communicating complex education policies simply',
+                'Serving diverse audience (students, teachers, institutions)',
+                'Creating credibility as education policy experts',
+                'Managing large resource library efficiently',
+                'Multi-language content for pan-India reach',
+                'Integration with institution management systems'
+            ],
+            solutions: [
+                'Created clear, jargon-free content with infographics',
+                'Designed role-based navigation and personalized sections',
+                'Added research publications, team credentials, and impact data',
+                'Built organized, searchable resource library with filters',
+                'Implemented translation support for regional languages',
+                'Developed API integrations for partner institutions'
+            ],
+            testimonial: {
+                text: "Paranpara's platform has become our go-to resource for understanding and implementing NEP 2020. The clarity they bring to education policy is invaluable!",
+                author: "Dr. Ramesh Iyer",
+                role: "Principal, Government School, Karnataka"
+            },
+            results: [
+                { label: 'Institution Sign-ups', value: '300+', description: 'Partner institutions' },
+                { label: 'Resource Downloads', value: '50K+', description: 'Monthly downloads' },
+                { label: 'User Engagement', value: '8 min', description: 'Avg. session duration' }
+            ],
+            keyHighlights: [
+                'Education policy expertise',
+                'Pan-India institution network',
+                'Comprehensive resource library',
+                'Impact-driven approach'
+            ]
+        },
+
+        // 🆕 NEW PROJECT: TinyTales YouTube Channel
+        'tiny-tales': {
+            title: 'TinyTales',
+            subtitle: 'Kids Entertainment YouTube Channel',
+            category: 'media',
+            tagline: 'Where Stories Come Alive for Little Minds',
+            description: 'An in-house YouTube channel dedicated to creating engaging, educational, and entertaining content for children with animated stories, nursery rhymes, and creative learning videos.',
+            longDescription: `TinyTales is our in-house YouTube channel created with a mission to provide quality, educational, and entertaining content for children. In a world of endless digital content, TinyTales stands out by combining entertainment with learning.
+
+Our content includes:
+• **Animated Stories**: Engaging tales with moral lessons and cultural values
+• **Nursery Rhymes**: Classic and original rhymes with colorful animations
+• **Moral Stories**: Age-appropriate stories that teach important life lessons
+• **Educational Content**: Learning videos covering alphabets, numbers, colors, and more
+• **Creative Learning**: DIY activities, art projects, and interactive content
+
+Every video is carefully crafted to ensure it's age-appropriate, educational, and genuinely entertaining. We work with child development experts to ensure our content supports cognitive and emotional development.
+
+TinyTales aims to be a trusted companion for parents who want their children to have positive screen time experiences. Our content is free from inappropriate themes and designed to spark curiosity and imagination.`,
+            features: [
+                'Animated Story Videos',
+                'Classic Nursery Rhymes',
+                'Original Songs & Music',
+                'Moral & Value-Based Stories',
+                'Educational Learning Videos',
+                'Colorful 2D/3D Animations',
+                'Age-Appropriate Content',
+                'Cultural & Traditional Stories',
+                'Interactive Learning Content',
+                'Regular Upload Schedule',
+                'Playlist Organization',
+                'Parent-Friendly Content',
+                'Multi-Language Support',
+                'Engaging Thumbnails & Titles'
+            ],
+            technologies: ['Adobe After Effects', 'Premiere Pro', 'Illustrator', 'YouTube Studio', 'Animation Software', 'Audio Production'],
+            gradient: 'from-red-500 to-pink-500',
+            images: [
+                '/assets/tiny-tales.jpg',
+                'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1566140967404-b8b3932483f5?w=800&h=600&fit=crop'
+            ],
+            liveLink: 'https://www.youtube.com/@TinyTales1812',
+            githubLink: '',
+            youtubeLink: 'https://www.youtube.com/@TinyTales1812',
+            isYouTube: true,
+            metrics: {
+                subscribers: '10K+',
+                videos: '150+',
+                views: '2M+',
+                watchHours: '100K+',
+                countries: '50+',
+                engagement: '8%'
+            },
+            timeline: 'Ongoing',
+            team: '6 Members',
+            client: 'In-House Project',
+            year: '2023',
+            challenges: [
+                'Creating content that educates while entertaining',
+                'Maintaining consistent upload schedule',
+                'Ensuring age-appropriate content across all videos',
+                'Standing out in crowded kids content space',
+                'Balancing production quality with quantity',
+                'Growing audience organically without ads'
+            ],
+            solutions: [
+                'Developed content framework with education experts',
+                'Built production pipeline for efficient video creation',
+                'Established content review process with child safety focus',
+                'Created unique animation style and character designs',
+                'Optimized production workflow with templates and assets',
+                'Focused on SEO, thumbnails, and community engagement'
+            ],
+            testimonial: {
+                text: "My kids absolutely love TinyTales! The stories are engaging, and I love that they're learning good values while being entertained. It's our daily family time now!",
+                author: "Priya Mehta",
+                role: "Mother of 2, Bangalore"
+            },
+            results: [
+                { label: 'Watch Time', value: '100K+ hrs', description: 'Total watch hours' },
+                { label: 'Avg. View Duration', value: '5+ min', description: 'High engagement' },
+                { label: 'Subscriber Growth', value: '+500/mo', description: 'Organic growth' }
+            ],
+            keyHighlights: [
+                'Quality kids entertainment',
+                'Educational & value-driven',
+                'Safe parent-approved content',
+                'Growing engaged community'
+            ]
+        },
+
+        // 🆕 NEW PROJECT: Sapphire House E-Commerce
+        'sapphire-house': {
+            title: 'Sapphire House',
+            subtitle: 'Premium E-Commerce Platform',
+            category: 'web',
+            tagline: 'Discover Premium Lifestyle Products',
+            description: 'A sophisticated e-commerce platform offering premium lifestyle products with elegant design, seamless shopping experience, and personalized customer recommendations.',
+            longDescription: `Sapphire House is a premium e-commerce platform we developed to offer discerning customers access to high-quality lifestyle products. The platform combines elegant design with powerful e-commerce functionality.
+
+The platform features:
+• **Curated Collections**: Hand-picked premium products across categories
+• **Elegant Design**: Sophisticated UI that reflects the premium brand
+• **Seamless Shopping**: Intuitive navigation and frictionless checkout
+• **Personalization**: AI-powered recommendations based on preferences
+• **Secure Payments**: Multiple payment options with enterprise-grade security
+
+Sapphire House caters to customers who value quality over quantity. Every product on the platform is carefully selected to meet high standards of craftsmanship and design.
+
+From home décor to fashion accessories, personal care to gifts – Sapphire House offers a curated shopping experience for those who appreciate the finer things in life. The platform is built for scale, supporting growth while maintaining the boutique shopping experience.`,
+            features: [
+                'Premium Product Catalog',
+                'Elegant Boutique Design',
+                'Secure Payment Integration',
+                'Personalized Recommendations',
+                'Wishlist & Favorites',
+                'Advanced Search & Filters',
+                'Product Reviews & Ratings',
+                'Order Tracking System',
+                'Gift Wrapping Options',
+                'Loyalty Rewards Program',
+                'Newsletter & Offers',
+                'Mobile-Responsive Design',
+                'Fast Checkout Process',
+                'Customer Account Dashboard'
+            ],
+            technologies: ['React', 'Tailwindcss', 'Python', 'Django', 'Fastapi'],
+            gradient: 'from-blue-500 to-purple-600',
+            images: [
+                '/assets/sapphire-house.jpg',
+                'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop',
+                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
+            ],
+            liveLink: '#',
+            githubLink: '',
+            metrics: {
+                products: '5K+',
+                customers: '20K+',
+                orders: '35K+',
+                categories: '12+',
+                rating: '4.8★',
+                retention: '60%'
+            },
+            timeline: '6 Months',
+            team: '7 Members',
+            client: 'Sapphire House Pvt Ltd',
+            year: '2024',
+            challenges: [
+                'Creating premium brand experience online',
+                'High-performance e-commerce at scale',
+                'Secure payment processing with multiple options',
+                'Personalization without being intrusive',
+                'Managing large product catalog efficiently',
+                'Building customer loyalty in competitive market'
+            ],
+            solutions: [
+                'Designed elegant UI with premium aesthetics and micro-interactions',
+                'Built on scalable MERN stack with Redis caching',
+                'Integrated Stripe with PCI-DSS compliance and multiple payment methods',
+                'Implemented subtle AI recommendations based on browsing patterns',
+                'Created efficient CMS with advanced inventory management',
+                'Developed tiered loyalty program with exclusive benefits'
+            ],
+            testimonial: {
+                text: "Sapphire House offers a shopping experience that matches the quality of their products. The website is beautiful, fast, and makes me feel valued as a customer!",
+                author: "Ritu Sharma",
+                role: "Loyal Customer, Mumbai"
+            },
+            results: [
+                { label: 'Conversion Rate', value: '3.8%', description: 'Above industry average' },
+                { label: 'Avg. Order Value', value: '₹4,500', description: 'Premium purchases' },
+                { label: 'Customer Retention', value: '60%', description: 'Repeat customers' }
+            ],
+            keyHighlights: [
+                'Premium brand experience',
+                'Curated quality products',
+                'Seamless shopping journey',
+                'Personalized recommendations'
+            ]
         }
     }
 
@@ -706,9 +1076,12 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ delay: 0.2 }}
-                            className="inline-block px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-semibold mb-6 uppercase tracking-wider"
+                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-sm text-white text-sm font-semibold mb-6 uppercase tracking-wider ${
+                                project.isYouTube ? 'bg-red-500/80' : 'bg-white/20'
+                            }`}
                         >
-                            {project.category} Project
+                            {project.isYouTube && <FaYoutube className="text-lg" />}
+                            {project.category} {project.isYouTube ? 'Channel' : 'Project'}
                         </motion.span>
 
                         {/* Title */}
@@ -749,7 +1122,23 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
 
                         {/* Action Buttons */}
                         <div className="flex flex-wrap justify-center gap-4">
-                            {project.liveLink && project.liveLink !== '#' && (
+                            {/* YouTube Button */}
+                            {project.isYouTube && project.youtubeLink && (
+                                <motion.a
+                                    href={project.youtubeLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="px-8 py-4 bg-red-600 text-white rounded-xl font-bold flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+                                >
+                                    <FaYoutube className="text-xl" />
+                                    Subscribe on YouTube
+                                </motion.a>
+                            )}
+                            
+                            {/* Website Button */}
+                            {project.liveLink && project.liveLink !== '#' && !project.isYouTube && (
                                 <motion.a
                                     href={project.liveLink}
                                     target="_blank"
@@ -762,6 +1151,8 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                                     Visit Website
                                 </motion.a>
                             )}
+                            
+                            {/* Play Store Button */}
                             {project.playStoreLink && project.playStoreLink !== '' && (
                                 <motion.a
                                     href={project.playStoreLink}
@@ -851,9 +1242,9 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 >
                     <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                         <span className={`w-10 h-10 rounded-xl bg-gradient-to-r ${project.gradient} flex items-center justify-center text-white`}>
-                            📸
+                            {project.isYouTube ? '🎬' : '📸'}
                         </span>
-                        Project Gallery
+                        {project.isYouTube ? 'Channel Gallery' : 'Project Gallery'}
                     </h2>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -906,7 +1297,7 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                         >
                             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                                 <FaLightbulb className="text-yellow-500" />
-                                Project Overview
+                                {project.isYouTube ? 'About The Channel' : 'Project Overview'}
                             </h2>
                             <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                                 {project.longDescription}
@@ -922,7 +1313,7 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                         >
                             <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                                 <FaCheckCircle className="text-green-500" />
-                                Key Features
+                                {project.isYouTube ? 'Content Features' : 'Key Features'}
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {project.features.map((feature, idx) => (
@@ -991,7 +1382,7 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                                 <FaTools className="text-[#3234a2]" />
-                                Technologies Used
+                                {project.isYouTube ? 'Tools Used' : 'Technologies Used'}
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {project.technologies.map((tech, idx) => (
@@ -1017,10 +1408,12 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                             transition={{ delay: 0.1 }}
                             className="bg-white rounded-2xl p-6 shadow-lg"
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Project Info</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">
+                                {project.isYouTube ? 'Channel Info' : 'Project Info'}
+                            </h3>
                             <div className="space-y-4">
                                 <div className="flex items-center justify-between">
-                                    <span className="text-gray-500">Client</span>
+                                    <span className="text-gray-500">{project.isYouTube ? 'Type' : 'Client'}</span>
                                     <span className="font-semibold text-gray-900 text-right text-sm">{project.client}</span>
                                 </div>
                                 <div className="flex items-center justify-between">
@@ -1098,10 +1491,16 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                 >
                     <div className="bg-gradient-to-r from-[#3234a2] to-[#32a162] rounded-3xl p-8 md:p-12 text-white text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            Have a Similar Project in Mind? 🚀
+                            {project.isYouTube 
+                                ? 'Want Us to Create Content for You? 🎬' 
+                                : 'Have a Similar Project in Mind? 🚀'
+                            }
                         </h2>
                         <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-                            Let's discuss how we can bring your vision to life with cutting-edge technology
+                            {project.isYouTube 
+                                ? "Let's create engaging video content that captures your audience"
+                                : "Let's discuss how we can bring your vision to life with cutting-edge technology"
+                            }
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <motion.button
@@ -1124,15 +1523,6 @@ SRU represents the modern lifestyle where fashion and beauty complement each oth
                     </div>
                 </motion.section>
             </div>
-
-            {/* Footer */}
-            <footer className="bg-gray-900 text-white py-8">
-                <div className="max-w-7xl mx-auto px-4 text-center">
-                    <p className="text-gray-400">
-                        © {new Date().getFullYear()} Your Company. All rights reserved.
-                    </p>
-                </div>
-            </footer>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import CTA from '../components/CTA'
 const ProjectsPage = () => {
     return (
         <div className="pt-20">
-            <Projects />
+            <Projects limit={null} showViewAll={false} />  
             <CTA />
         </div>
     )
