@@ -61,7 +61,7 @@ const Projects = ({ limit = null, showViewAll = true }) => {  // 👈 Props add 
         },
         {
             id: 'ishu-store',
-            title: "Ishu's Store: Digital Modest Fashion",
+            title: "Ishu's Store: Modest Fashion Brand",
             category: 'web',
             description: 'An elegant e-commerce platform for a modest fashion brand specializing in hijabs, abayas, and contemporary modest wear with curated collections, detailed product visuals, and personalized recommendations.',
             image: '/assets/Ishu store.jpg',
