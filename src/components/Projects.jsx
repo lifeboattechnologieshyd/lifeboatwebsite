@@ -65,7 +65,7 @@ const Projects = ({ limit = null, showViewAll = true }) => {  // 👈 Props add 
             category: 'web',
             description: 'An elegant e-commerce platform for a modest fashion brand specializing in hijabs, abayas, and contemporary modest wear with curated collections, detailed product visuals, and personalized recommendations.',
             image: '/assets/Ishu store.jpg',
-            tags: ['Shopify', 'E-Commerce', 'Fashion'],
+            tags: ["HTML", "CSS", "JS", "React", "Python", "Django", "POSTGRES", "REDIS", "AWS", "iOS", "ANDROID"],
             gradient: 'from-[#32a162] to-teal-500',
             link: 'https://ishustore.com/',
             github: '',

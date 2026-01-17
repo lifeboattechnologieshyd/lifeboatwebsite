@@ -328,7 +328,7 @@ The platform celebrates modest fashion while embracing modern e-commerce capabil
                 'Customer Reviews & Ratings',
                 'Loyalty Points Program'
             ],
-            technologies: ['Shopify', 'Liquid', 'JavaScript', 'CSS3', 'Payment Gateway'],
+            technologies: ["HTML", "CSS", "JS", "React", "Python", "Django", "POSTGRES", "REDIS", "AWS", "iOS", "ANDROID"],
             gradient: 'from-[#32a162] to-teal-500',
             images: [
                 '/assets/Ishu store.jpg',
@@ -346,10 +346,10 @@ The platform celebrates modest fashion while embracing modern e-commerce capabil
                 orders: '50K+',
                 rating: '4.9★'
             },
-            timeline: '5 Months',
+            timeline: '3 Months',
             team: '5 Members',
-            client: "Ishu's Fashion Pvt Ltd",
-            year: '2024',
+            client: "Ishu's Store",
+            year: '2025',
             challenges: [
                 'Showcasing fabric quality through digital medium',
                 'Building trust for online modest fashion shopping',
